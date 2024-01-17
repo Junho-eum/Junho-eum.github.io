@@ -1,0 +1,3597 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_8fae38a8c1f8f254f6dbc756476f2845 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_8fae38a8c1f8f254f6dbc756476f2845" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_8fae38a8c1f8f254f6dbc756476f2845 = L.map(
+                "map_8fae38a8c1f8f254f6dbc756476f2845",
+                {
+                    center: [42.38724610222085, -71.23371985565409],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 12,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_b2f6a3b98e9ee67f7d4cbfdbd1039a90 = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_b2f6a3b98e9ee67f7d4cbfdbd1039a90.addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var marker_3fd667a7d2ac07b455bddd20b8d26bde = L.marker(
+                [42.402936, -71.24819],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var div_icon_8fa9fa1df3d98a36f74937fdc4ddc5cc = L.divIcon({"className": "empty", "html": "\u003cspan class=\"fa-stack\" style=\"font-size: 12pt\"\u003e\n                    \u003cspan class=\"fa fa-circle-o fa-stack-2x\" style=\"color: #5d8aa8\"\u003e\u003c/span\u003e\n                    \u003cstrong class=\"fa-stack-1x\"\u003e1\u003c/strong\u003e\n                \u003c/span\u003e", "iconAnchor": [14, 40], "iconSize": [150, 36]});
+            marker_3fd667a7d2ac07b455bddd20b8d26bde.setIcon(div_icon_8fa9fa1df3d98a36f74937fdc4ddc5cc);
+        
+    
+        var popup_0d6fbb7d9589b3b16bbd4ebaf0124d4b = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_9863b2c281c0fab275dc87351d90202a = $(`<div id="html_9863b2c281c0fab275dc87351d90202a" style="width: 100.0%; height: 100.0%;">Address: 441 Lincoln Street, Waltham, MA 02451<br>                Census tract: 3681.02<br>                Population: 4718<br>                Median Income: 102083.0</div>`)[0];
+                popup_0d6fbb7d9589b3b16bbd4ebaf0124d4b.setContent(html_9863b2c281c0fab275dc87351d90202a);
+            
+        
+
+        marker_3fd667a7d2ac07b455bddd20b8d26bde.bindPopup(popup_0d6fbb7d9589b3b16bbd4ebaf0124d4b)
+        ;
+
+        
+    
+    
+            var marker_d6eafc1fd73669b267706e4156c362d6 = L.marker(
+                [42.384458, -71.252627],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var div_icon_b93376c53b348e60045f32607d558c61 = L.divIcon({"className": "empty", "html": "\u003cspan class=\"fa-stack\" style=\"font-size: 12pt\"\u003e\n                    \u003cspan class=\"fa fa-circle-o fa-stack-2x\" style=\"color: #5d8aa8\"\u003e\u003c/span\u003e\n                    \u003cstrong class=\"fa-stack-1x\"\u003e2\u003c/strong\u003e\n                \u003c/span\u003e", "iconAnchor": [14, 40], "iconSize": [150, 36]});
+            marker_d6eafc1fd73669b267706e4156c362d6.setIcon(div_icon_b93376c53b348e60045f32607d558c61);
+        
+    
+        var popup_22abd1d8c579b1934d97a8bbf7e7c3bc = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_74375c5c7e6d6066b86f7a0a9e80d647 = $(`<div id="html_74375c5c7e6d6066b86f7a0a9e80d647" style="width: 100.0%; height: 100.0%;">Address: 320 Prospect Hill Road, Waltham, MA 02451<br>                Census tract: 3682.0<br>                Population: 4198<br>                Median Income: 112778.0</div>`)[0];
+                popup_22abd1d8c579b1934d97a8bbf7e7c3bc.setContent(html_74375c5c7e6d6066b86f7a0a9e80d647);
+            
+        
+
+        marker_d6eafc1fd73669b267706e4156c362d6.bindPopup(popup_22abd1d8c579b1934d97a8bbf7e7c3bc)
+        ;
+
+        
+    
+    
+            var marker_bebf9f100a05026e1e24abd7459b6d5b = L.marker(
+                [42.377161, -71.248068],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var div_icon_f7b425d6ee41ced3a8bef6f32fe2ed2d = L.divIcon({"className": "empty", "html": "\u003cspan class=\"fa-stack\" style=\"font-size: 12pt\"\u003e\n                    \u003cspan class=\"fa fa-circle-o fa-stack-2x\" style=\"color: #5d8aa8\"\u003e\u003c/span\u003e\n                    \u003cstrong class=\"fa-stack-1x\"\u003e3\u003c/strong\u003e\n                \u003c/span\u003e", "iconAnchor": [14, 40], "iconSize": [150, 36]});
+            marker_bebf9f100a05026e1e24abd7459b6d5b.setIcon(div_icon_f7b425d6ee41ced3a8bef6f32fe2ed2d);
+        
+    
+        var popup_9a2812e2bd98b88e9d276780c48833d3 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_5798de64d92b1ddffd117c2008289d4e = $(`<div id="html_5798de64d92b1ddffd117c2008289d4e" style="width: 100.0%; height: 100.0%;">Address: 23 Illington Street, Waltham, MA 02451<br>                Census tract: 3683.0<br>                Population: 5763<br>                Median Income: 78088.0</div>`)[0];
+                popup_9a2812e2bd98b88e9d276780c48833d3.setContent(html_5798de64d92b1ddffd117c2008289d4e);
+            
+        
+
+        marker_bebf9f100a05026e1e24abd7459b6d5b.bindPopup(popup_9a2812e2bd98b88e9d276780c48833d3)
+        ;
+
+        
+    
+    
+            var marker_339abd90e56ed8e05466c99b6a4a3bc5 = L.marker(
+                [42.379787, -71.230603],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var div_icon_436287dbd27db24be2b5f4381a71b761 = L.divIcon({"className": "empty", "html": "\u003cspan class=\"fa-stack\" style=\"font-size: 12pt\"\u003e\n                    \u003cspan class=\"fa fa-circle-o fa-stack-2x\" style=\"color: #5d8aa8\"\u003e\u003c/span\u003e\n                    \u003cstrong class=\"fa-stack-1x\"\u003e4\u003c/strong\u003e\n                \u003c/span\u003e", "iconAnchor": [14, 40], "iconSize": [150, 36]});
+            marker_339abd90e56ed8e05466c99b6a4a3bc5.setIcon(div_icon_436287dbd27db24be2b5f4381a71b761);
+        
+    
+        var popup_5ba809c8619e0164e5d4722ac28c7070 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_9887a788de1d60dffe1e6c351ce6a148 = $(`<div id="html_9887a788de1d60dffe1e6c351ce6a148" style="width: 100.0%; height: 100.0%;">Address: 324 Bishops Forest Drive, Waltham, MA 02452<br>                Census tract: 3689.02<br>                Population: 3691<br>                Median Income: 59375.0</div>`)[0];
+                popup_5ba809c8619e0164e5d4722ac28c7070.setContent(html_9887a788de1d60dffe1e6c351ce6a148);
+            
+        
+
+        marker_339abd90e56ed8e05466c99b6a4a3bc5.bindPopup(popup_5ba809c8619e0164e5d4722ac28c7070)
+        ;
+
+        
+    
+    
+            var marker_00acaf44cdb5bb02e5b64c69250ad162 = L.marker(
+                [42.386681, -71.221165],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var div_icon_0666bf7d7e9412c87eae7da335051691 = L.divIcon({"className": "empty", "html": "\u003cspan class=\"fa-stack\" style=\"font-size: 12pt\"\u003e\n                    \u003cspan class=\"fa fa-circle-o fa-stack-2x\" style=\"color: #5d8aa8\"\u003e\u003c/span\u003e\n                    \u003cstrong class=\"fa-stack-1x\"\u003e5\u003c/strong\u003e\n                \u003c/span\u003e", "iconAnchor": [14, 40], "iconSize": [150, 36]});
+            marker_00acaf44cdb5bb02e5b64c69250ad162.setIcon(div_icon_0666bf7d7e9412c87eae7da335051691);
+        
+    
+        var popup_7c39dee198fe1f59ddd77502da26a9aa = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_6c06758468d8f8a217efb1733dd4b22f = $(`<div id="html_6c06758468d8f8a217efb1733dd4b22f" style="width: 100.0%; height: 100.0%;">Address: College Drive, Waltham, MA 02452<br>                Census tract: 3690.0<br>                Population: 3300<br>                Median Income: 101519.14285714286</div>`)[0];
+                popup_7c39dee198fe1f59ddd77502da26a9aa.setContent(html_6c06758468d8f8a217efb1733dd4b22f);
+            
+        
+
+        marker_00acaf44cdb5bb02e5b64c69250ad162.bindPopup(popup_7c39dee198fe1f59ddd77502da26a9aa)
+        ;
+
+        
+    
+    
+            var marker_a8a43195a85712ae64109f631b23aaba = L.marker(
+                [42.383564, -71.206967],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var div_icon_cc006896123d8716dc3e45905c73de4b = L.divIcon({"className": "empty", "html": "\u003cspan class=\"fa-stack\" style=\"font-size: 12pt\"\u003e\n                    \u003cspan class=\"fa fa-circle-o fa-stack-2x\" style=\"color: #5d8aa8\"\u003e\u003c/span\u003e\n                    \u003cstrong class=\"fa-stack-1x\"\u003e6\u003c/strong\u003e\n                \u003c/span\u003e", "iconAnchor": [14, 40], "iconSize": [150, 36]});
+            marker_a8a43195a85712ae64109f631b23aaba.setIcon(div_icon_cc006896123d8716dc3e45905c73de4b);
+        
+    
+        var popup_84b5f1acdbab3408bc3861188a4f8abe = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_da4a43450240ded609910decff7b7b18 = $(`<div id="html_da4a43450240ded609910decff7b7b18" style="width: 100.0%; height: 100.0%;">Address: 271 Waverley Oaks Road, Waltham, MA 02452<br>                Census tract: 3691.0<br>                Population: 5059<br>                Median Income: 87109.0</div>`)[0];
+                popup_84b5f1acdbab3408bc3861188a4f8abe.setContent(html_da4a43450240ded609910decff7b7b18);
+            
+        
+
+        marker_a8a43195a85712ae64109f631b23aaba.bindPopup(popup_84b5f1acdbab3408bc3861188a4f8abe)
+        ;
+
+        
+    
+    
+            var marker_7d38dddc6f88dcd56d834916a3e85258 = L.marker(
+                [42.37568533333334, -71.24194583333333],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_aefc5d6777014874e137815a75d55690 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7d38dddc6f88dcd56d834916a3e85258.setIcon(icon_aefc5d6777014874e137815a75d55690);
+        
+    
+        var popup_ad5b2221edcbb96c65f775043b6256fa = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_d36d14a36959d7a1e94ed5df36109045 = $(`<div id="html_d36d14a36959d7a1e94ed5df36109045" style="width: 100.0%; height: 100.0%;">Address: 30 Grant St, Waltham, MA 02453<br>                Census tract: 3683.0<br>                Population: 5763<br>                Median Income: 78088.0</div>`)[0];
+                popup_ad5b2221edcbb96c65f775043b6256fa.setContent(html_d36d14a36959d7a1e94ed5df36109045);
+            
+        
+
+        marker_7d38dddc6f88dcd56d834916a3e85258.bindPopup(popup_ad5b2221edcbb96c65f775043b6256fa)
+        ;
+
+        
+    
+    
+            var marker_c233dd74bfa1a40f33b6eb09549c8806 = L.marker(
+                [42.3761905, -71.24637778571429],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_828c104b8affdf29285016b2fe9a726e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c233dd74bfa1a40f33b6eb09549c8806.setIcon(icon_828c104b8affdf29285016b2fe9a726e);
+        
+    
+        var popup_56014b56f7208d737ab7e9c7137db03b = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_20aacf498f690e4bbe46d702d5a77b4b = $(`<div id="html_20aacf498f690e4bbe46d702d5a77b4b" style="width: 100.0%; height: 100.0%;">Address: 879 Main St, Waltham, MA 02451<br>                Census tract: 3683.0<br>                Population: 5763<br>                Median Income: 78088.0</div>`)[0];
+                popup_56014b56f7208d737ab7e9c7137db03b.setContent(html_20aacf498f690e4bbe46d702d5a77b4b);
+            
+        
+
+        marker_c233dd74bfa1a40f33b6eb09549c8806.bindPopup(popup_56014b56f7208d737ab7e9c7137db03b)
+        ;
+
+        
+    
+    
+            var marker_cf71eee3a8c0dcb7d94de744abd462b2 = L.marker(
+                [42.367719430732016, -71.23795462304705],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_4e24637205f97a63a65f0cacbc2c7dc5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_cf71eee3a8c0dcb7d94de744abd462b2.setIcon(icon_4e24637205f97a63a65f0cacbc2c7dc5);
+        
+    
+        var popup_5bc12c244ae2e0ae95dfa15baeeb8c6e = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_6a845da3ae67057bdff6b4375ff9dc37 = $(`<div id="html_6a845da3ae67057bdff6b4375ff9dc37" style="width: 100.0%; height: 100.0%;">Address: 100 Maple St, Waltham, MA 02453<br>                Census tract: 3685.0<br>                Population: 3419<br>                Median Income: 52976.0</div>`)[0];
+                popup_5bc12c244ae2e0ae95dfa15baeeb8c6e.setContent(html_6a845da3ae67057bdff6b4375ff9dc37);
+            
+        
+
+        marker_cf71eee3a8c0dcb7d94de744abd462b2.bindPopup(popup_5bc12c244ae2e0ae95dfa15baeeb8c6e)
+        ;
+
+        
+    
+    
+            var marker_0dcf3161b2494eda79149f2192cb78ad = L.marker(
+                [42.40479979092504, -71.21724803637781],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_1e3c8b605e56b283de9bfdc78c97cbac = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0dcf3161b2494eda79149f2192cb78ad.setIcon(icon_1e3c8b605e56b283de9bfdc78c97cbac);
+        
+    
+        var popup_89a8caf43185ef4c40cf0b35ed1efa8e = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_76dace7440de04979aeae42d35e25b4e = $(`<div id="html_76dace7440de04979aeae42d35e25b4e" style="width: 100.0%; height: 100.0%;">Address: 616 Trapelo Rd, Waltham, MA 02452<br>                Census tract: 3689.01<br>                Population: 5973<br>                Median Income: 92404.0</div>`)[0];
+                popup_89a8caf43185ef4c40cf0b35ed1efa8e.setContent(html_76dace7440de04979aeae42d35e25b4e);
+            
+        
+
+        marker_0dcf3161b2494eda79149f2192cb78ad.bindPopup(popup_89a8caf43185ef4c40cf0b35ed1efa8e)
+        ;
+
+        
+    
+    
+            var marker_4492cf5ed0800134782a8e6821ca02f1 = L.marker(
+                [42.374640368421055, -71.24993452631578],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_253c060e89ab33b5602549cef03bbd89 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4492cf5ed0800134782a8e6821ca02f1.setIcon(icon_253c060e89ab33b5602549cef03bbd89);
+        
+    
+        var popup_ae6c70966a96001caae45e5457977fa2 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_ca2fcd27700fd0dec446012d8158c651 = $(`<div id="html_ca2fcd27700fd0dec446012d8158c651" style="width: 100.0%; height: 100.0%;">Address: 32 South St, Waltham, MA 02453<br>                Census tract: 3683.0<br>                Population: 5763<br>                Median Income: 78088.0</div>`)[0];
+                popup_ae6c70966a96001caae45e5457977fa2.setContent(html_ca2fcd27700fd0dec446012d8158c651);
+            
+        
+
+        marker_4492cf5ed0800134782a8e6821ca02f1.bindPopup(popup_ae6c70966a96001caae45e5457977fa2)
+        ;
+
+        
+    
+    
+            var marker_4556f3a0a6e14877bb9ca8fd53613952 = L.marker(
+                [42.40562422222222, -71.23416755555556],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_5bebcdc918a11e837b4535eda8ba7f6f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4556f3a0a6e14877bb9ca8fd53613952.setIcon(icon_5bebcdc918a11e837b4535eda8ba7f6f);
+        
+    
+        var popup_93c26bdeee6e8274a70259f6407c2958 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_2cb6ab5a7c4a0ad2910d889758a2ee03 = $(`<div id="html_2cb6ab5a7c4a0ad2910d889758a2ee03" style="width: 100.0%; height: 100.0%;">Address: 862 Lexington St, Waltham, MA 02452<br>                Census tract: 3681.01<br>                Population: 5782<br>                Median Income: 100625.0</div>`)[0];
+                popup_93c26bdeee6e8274a70259f6407c2958.setContent(html_2cb6ab5a7c4a0ad2910d889758a2ee03);
+            
+        
+
+        marker_4556f3a0a6e14877bb9ca8fd53613952.bindPopup(popup_93c26bdeee6e8274a70259f6407c2958)
+        ;
+
+        
+    
+    
+            var marker_8efe194663a9a4e2441c093f3744df4a = L.marker(
+                [42.36982610526316, -71.23704605263158],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_288f95edc45f4a2c1a162cd566f4a72c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8efe194663a9a4e2441c093f3744df4a.setIcon(icon_288f95edc45f4a2c1a162cd566f4a72c);
+        
+    
+        var popup_bc8b5eabc7875e0dd9aa8194f44e6b8f = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_1cff5349c60a099b1a049e309ab73f67 = $(`<div id="html_1cff5349c60a099b1a049e309ab73f67" style="width: 100.0%; height: 100.0%;">Address: 376 Moody St, Waltham, MA 02453<br>                Census tract: 3685.0<br>                Population: 3419<br>                Median Income: 52976.0</div>`)[0];
+                popup_bc8b5eabc7875e0dd9aa8194f44e6b8f.setContent(html_1cff5349c60a099b1a049e309ab73f67);
+            
+        
+
+        marker_8efe194663a9a4e2441c093f3744df4a.bindPopup(popup_bc8b5eabc7875e0dd9aa8194f44e6b8f)
+        ;
+
+        
+    
+    
+            var marker_481df15238c37beee925e0c2e2145095 = L.marker(
+                [42.3883030625, -71.20070625],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_d55de158d2b9de23ba1c67e9496d670f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_481df15238c37beee925e0c2e2145095.setIcon(icon_d55de158d2b9de23ba1c67e9496d670f);
+        
+    
+        var popup_28bae59b93a6029f6b8cf71241c9b90c = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_0b8209114876ea11287ec2edaccdec55 = $(`<div id="html_0b8209114876ea11287ec2edaccdec55" style="width: 100.0%; height: 100.0%;">Address: 465 Waverley Oaks Rd, Waltham, MA 02452<br>                Census tract: 3691.0<br>                Population: 5059<br>                Median Income: 87109.0</div>`)[0];
+                popup_28bae59b93a6029f6b8cf71241c9b90c.setContent(html_0b8209114876ea11287ec2edaccdec55);
+            
+        
+
+        marker_481df15238c37beee925e0c2e2145095.bindPopup(popup_28bae59b93a6029f6b8cf71241c9b90c)
+        ;
+
+        
+    
+    
+            var marker_c1927391908c78c7faea52f8426491cd = L.marker(
+                [42.374686, -71.234309],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_17f100b79aa103a3bbf50ad771a3e66a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c1927391908c78c7faea52f8426491cd.setIcon(icon_17f100b79aa103a3bbf50ad771a3e66a);
+        
+    
+        var popup_8c23d99425a21d7acff2e946ced34267 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_fad4f3515998d319efe73d9cc77b8ec2 = $(`<div id="html_fad4f3515998d319efe73d9cc77b8ec2" style="width: 100.0%; height: 100.0%;">Address: 52 Elm St, Waltham, MA 02453<br>                Census tract: 3688.0<br>                Population: 6169<br>                Median Income: 76929.0</div>`)[0];
+                popup_8c23d99425a21d7acff2e946ced34267.setContent(html_fad4f3515998d319efe73d9cc77b8ec2);
+            
+        
+
+        marker_c1927391908c78c7faea52f8426491cd.bindPopup(popup_8c23d99425a21d7acff2e946ced34267)
+        ;
+
+        
+    
+    
+            var marker_4d07e256b138178de878190c74c58fe3 = L.marker(
+                [42.3743059, -71.2356117],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_b5c8f04b3638502a259fbbd1f3c97741 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4d07e256b138178de878190c74c58fe3.setIcon(icon_b5c8f04b3638502a259fbbd1f3c97741);
+        
+    
+        var popup_da0a83dee454f3ef5b127cf2c06463f1 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_71537eece34f7362ff3e5ec132cde603 = $(`<div id="html_71537eece34f7362ff3e5ec132cde603" style="width: 100.0%; height: 100.0%;">Address: 75, Waltham, MA 02451<br>                Census tract: 3682.0<br>                Population: 4198<br>                Median Income: 112778.0</div>`)[0];
+                popup_da0a83dee454f3ef5b127cf2c06463f1.setContent(html_71537eece34f7362ff3e5ec132cde603);
+            
+        
+
+        marker_4d07e256b138178de878190c74c58fe3.bindPopup(popup_da0a83dee454f3ef5b127cf2c06463f1)
+        ;
+
+        
+    
+    
+            var marker_7fe58e430736d987d923db515bf87a42 = L.marker(
+                [42.3708245, -71.2368825],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_e2ed99690576960af7817f6f0b54749d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_7fe58e430736d987d923db515bf87a42.setIcon(icon_e2ed99690576960af7817f6f0b54749d);
+        
+    
+        var popup_431c7f6dbe31063b14b8e2b7cf8cbe9a = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_c7d4ed9ca1f34c99f432333c239ccef5 = $(`<div id="html_c7d4ed9ca1f34c99f432333c239ccef5" style="width: 100.0%; height: 100.0%;">Address: 314 Moody St, Waltham, MA 02453<br>                Census tract: 3685.0<br>                Population: 3419<br>                Median Income: 52976.0</div>`)[0];
+                popup_431c7f6dbe31063b14b8e2b7cf8cbe9a.setContent(html_c7d4ed9ca1f34c99f432333c239ccef5);
+            
+        
+
+        marker_7fe58e430736d987d923db515bf87a42.bindPopup(popup_431c7f6dbe31063b14b8e2b7cf8cbe9a)
+        ;
+
+        
+    
+    
+            var marker_fd841244d3bc8ed58a9aed9799c38b69 = L.marker(
+                [42.3766543, -71.27396594953314],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_0a884ffa7dd5f0a6e004d25eb34a9d0d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_fd841244d3bc8ed58a9aed9799c38b69.setIcon(icon_0a884ffa7dd5f0a6e004d25eb34a9d0d);
+        
+    
+        var popup_5e0717100fbd8d6794ee2563c1e8ae27 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_77e6f075d8d200135608683d1e46a17c = $(`<div id="html_77e6f075d8d200135608683d1e46a17c" style="width: 100.0%; height: 100.0%;">Address: 1432 Main St, Waltham, MA 02451<br>                Census tract: 3682.0<br>                Population: 4198<br>                Median Income: 112778.0</div>`)[0];
+                popup_5e0717100fbd8d6794ee2563c1e8ae27.setContent(html_77e6f075d8d200135608683d1e46a17c);
+            
+        
+
+        marker_fd841244d3bc8ed58a9aed9799c38b69.bindPopup(popup_5e0717100fbd8d6794ee2563c1e8ae27)
+        ;
+
+        
+    
+    
+            var marker_4711029b3cf749491c605966e9673e60 = L.marker(
+                [42.37022869240519, -71.2487848904995],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_8aa2f8dbab4032518255acf5b5d7c28c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4711029b3cf749491c605966e9673e60.setIcon(icon_8aa2f8dbab4032518255acf5b5d7c28c);
+        
+    
+        var popup_3ef8d725ad6b6b564541441c9739a5d9 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_6c8414b22db60f1db37f692f68fa8ca5 = $(`<div id="html_6c8414b22db60f1db37f692f68fa8ca5" style="width: 100.0%; height: 100.0%;">Address: 20 Hope Ave, Waltham, MA 02453<br>                Census tract: 3684.0<br>                Population: 8606<br>                Median Income: 83036.0</div>`)[0];
+                popup_3ef8d725ad6b6b564541441c9739a5d9.setContent(html_6c8414b22db60f1db37f692f68fa8ca5);
+            
+        
+
+        marker_4711029b3cf749491c605966e9673e60.bindPopup(popup_3ef8d725ad6b6b564541441c9739a5d9)
+        ;
+
+        
+    
+    
+            var marker_b9aa466990e6e361046a4876b159fe63 = L.marker(
+                [42.374686, -71.234309],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_9991a3982f0698b3434994bfb10d1b36 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b9aa466990e6e361046a4876b159fe63.setIcon(icon_9991a3982f0698b3434994bfb10d1b36);
+        
+    
+        var popup_cdc91fb57f5a9eb68025b7ee5e6cc9ed = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_148de63fde965f553537a7aef94f1319 = $(`<div id="html_148de63fde965f553537a7aef94f1319" style="width: 100.0%; height: 100.0%;">Address: 52 Elm St, Waltham, MA 02453<br>                Census tract: 3688.0<br>                Population: 6169<br>                Median Income: 76929.0</div>`)[0];
+                popup_cdc91fb57f5a9eb68025b7ee5e6cc9ed.setContent(html_148de63fde965f553537a7aef94f1319);
+            
+        
+
+        marker_b9aa466990e6e361046a4876b159fe63.bindPopup(popup_cdc91fb57f5a9eb68025b7ee5e6cc9ed)
+        ;
+
+        
+    
+    
+            var marker_8c004206435f6c05c712f9912137a8a1 = L.marker(
+                [42.37242912903226, -71.23682896774194],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_bee981c967aea6ddd8a3725b0839ade2 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8c004206435f6c05c712f9912137a8a1.setIcon(icon_bee981c967aea6ddd8a3725b0839ade2);
+        
+    
+        var popup_fe5a2ee675a5e40310b75dc3b7c2f430 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_99ef922f80c6efbc3122beebacbf3783 = $(`<div id="html_99ef922f80c6efbc3122beebacbf3783" style="width: 100.0%; height: 100.0%;">Address: 225 Moody St, Waltham, MA 02453<br>                Census tract: 3685.0<br>                Population: 3419<br>                Median Income: 52976.0</div>`)[0];
+                popup_fe5a2ee675a5e40310b75dc3b7c2f430.setContent(html_99ef922f80c6efbc3122beebacbf3783);
+            
+        
+
+        marker_8c004206435f6c05c712f9912137a8a1.bindPopup(popup_fe5a2ee675a5e40310b75dc3b7c2f430)
+        ;
+
+        
+    
+    
+            var marker_6b756e7aaf4674c4923ae1561d98caab = L.marker(
+                [42.37622521428571, -71.25107771428571],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_74404dc80c7d9101cf5530e28bff5d8a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_6b756e7aaf4674c4923ae1561d98caab.setIcon(icon_74404dc80c7d9101cf5530e28bff5d8a);
+        
+    
+        var popup_10085425f8aae9030c627632a5b74e34 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_6c73c271217930e8f27e0e809f35306c = $(`<div id="html_6c73c271217930e8f27e0e809f35306c" style="width: 100.0%; height: 100.0%;">Address: 976 Main St, Waltham, MA 02451<br>                Census tract: 3683.0<br>                Population: 5763<br>                Median Income: 78088.0</div>`)[0];
+                popup_10085425f8aae9030c627632a5b74e34.setContent(html_6c73c271217930e8f27e0e809f35306c);
+            
+        
+
+        marker_6b756e7aaf4674c4923ae1561d98caab.bindPopup(popup_10085425f8aae9030c627632a5b74e34)
+        ;
+
+        
+    
+    
+            var marker_a95aca81820d681a0b5ebc84427a9f70 = L.marker(
+                [42.37693332451917, -71.23131197021372],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_9ba925461af289dbd70f077c43e26fb8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a95aca81820d681a0b5ebc84427a9f70.setIcon(icon_9ba925461af289dbd70f077c43e26fb8);
+        
+    
+        var popup_bca3f6a263903a5826cb0852addabf3b = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_ea26375704d4f40a49eded425bc4e738 = $(`<div id="html_ea26375704d4f40a49eded425bc4e738" style="width: 100.0%; height: 100.0%;">Address: 520 Main St, Waltham, MA 02452<br>                Census tract: 3688.0<br>                Population: 6169<br>                Median Income: 76929.0</div>`)[0];
+                popup_bca3f6a263903a5826cb0852addabf3b.setContent(html_ea26375704d4f40a49eded425bc4e738);
+            
+        
+
+        marker_a95aca81820d681a0b5ebc84427a9f70.bindPopup(popup_bca3f6a263903a5826cb0852addabf3b)
+        ;
+
+        
+    
+    
+            var marker_a950c32e9f1693d99ea5f64c624c34a2 = L.marker(
+                [42.37368428571429, -71.20614171428572],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_e572155ec25810c48b0379157ec77dba = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a950c32e9f1693d99ea5f64c624c34a2.setIcon(icon_e572155ec25810c48b0379157ec77dba);
+        
+    
+        var popup_be9c6a829f77ea13af9cc5c20577da61 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_de7343c0f6cc9c0da15da06a4a7889e3 = $(`<div id="html_de7343c0f6cc9c0da15da06a4a7889e3" style="width: 100.0%; height: 100.0%;">Address: 695 Main St, Waltham, MA 02451<br>                Census tract: 3689.02<br>                Population: 3691<br>                Median Income: 59375.0</div>`)[0];
+                popup_be9c6a829f77ea13af9cc5c20577da61.setContent(html_de7343c0f6cc9c0da15da06a4a7889e3);
+            
+        
+
+        marker_a950c32e9f1693d99ea5f64c624c34a2.bindPopup(popup_be9c6a829f77ea13af9cc5c20577da61)
+        ;
+
+        
+    
+    
+            var marker_1671a879110220c79b04173cc7a8da9f = L.marker(
+                [42.375903, -71.213281],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_39a020f23a7b531a7b88fe5d70411f47 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1671a879110220c79b04173cc7a8da9f.setIcon(icon_39a020f23a7b531a7b88fe5d70411f47);
+        
+    
+        var popup_a73bc4561ad0297fa950d903cc06e6a5 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_139e5d7db1fffa0171b8d7fdbc2042c3 = $(`<div id="html_139e5d7db1fffa0171b8d7fdbc2042c3" style="width: 100.0%; height: 100.0%;">Address: 131 Main St, Waltham, MA 02453<br>                Census tract: 3691.0<br>                Population: 5059<br>                Median Income: 87109.0</div>`)[0];
+                popup_a73bc4561ad0297fa950d903cc06e6a5.setContent(html_139e5d7db1fffa0171b8d7fdbc2042c3);
+            
+        
+
+        marker_1671a879110220c79b04173cc7a8da9f.bindPopup(popup_a73bc4561ad0297fa950d903cc06e6a5)
+        ;
+
+        
+    
+    
+            var marker_fd7b6cf8ca1d32fe5a7a751d07665dd0 = L.marker(
+                [42.37022869240519, -71.2487848904995],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_00beb275fddbaf05b31a3cf304dd4729 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_fd7b6cf8ca1d32fe5a7a751d07665dd0.setIcon(icon_00beb275fddbaf05b31a3cf304dd4729);
+        
+    
+        var popup_5bf2934ef30bd4900735084bb1f256f7 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_a1154b733258de0dda66a5c9824d0d70 = $(`<div id="html_a1154b733258de0dda66a5c9824d0d70" style="width: 100.0%; height: 100.0%;">Address: 20 Hope Ave, Waltham, MA 02453<br>                Census tract: 3684.0<br>                Population: 8606<br>                Median Income: 83036.0</div>`)[0];
+                popup_5bf2934ef30bd4900735084bb1f256f7.setContent(html_a1154b733258de0dda66a5c9824d0d70);
+            
+        
+
+        marker_fd7b6cf8ca1d32fe5a7a751d07665dd0.bindPopup(popup_5bf2934ef30bd4900735084bb1f256f7)
+        ;
+
+        
+    
+    
+            var marker_a9772acb8f339ca28b7bee24f900fefa = L.marker(
+                [42.40615805701722, -71.23312266277422],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_fcc9bfe80995c1587db944cd81cf6d40 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a9772acb8f339ca28b7bee24f900fefa.setIcon(icon_fcc9bfe80995c1587db944cd81cf6d40);
+        
+    
+        var popup_236399e65e8310f6d19a560ae12fdb9f = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_50bd6d10b8a66d59a17ec597ba917173 = $(`<div id="html_50bd6d10b8a66d59a17ec597ba917173" style="width: 100.0%; height: 100.0%;">Address: 25 Lionel Ave, Waltham, MA 02452<br>                Census tract: 3689.01<br>                Population: 5973<br>                Median Income: 92404.0</div>`)[0];
+                popup_236399e65e8310f6d19a560ae12fdb9f.setContent(html_50bd6d10b8a66d59a17ec597ba917173);
+            
+        
+
+        marker_a9772acb8f339ca28b7bee24f900fefa.bindPopup(popup_236399e65e8310f6d19a560ae12fdb9f)
+        ;
+
+        
+    
+    
+            var marker_be96d7f74e97141254712692d1ec477e = L.marker(
+                [42.40479979092504, -71.21724803637781],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_eefead6a14a1ef3fd44898270c70df7b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_be96d7f74e97141254712692d1ec477e.setIcon(icon_eefead6a14a1ef3fd44898270c70df7b);
+        
+    
+        var popup_1a8a065571efa19a99abe710884b0103 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_b234f827ad93ddc6492d365e7ea74315 = $(`<div id="html_b234f827ad93ddc6492d365e7ea74315" style="width: 100.0%; height: 100.0%;">Address: 616 Trapelo Rd, Waltham, MA 02452<br>                Census tract: 3689.01<br>                Population: 5973<br>                Median Income: 92404.0</div>`)[0];
+                popup_1a8a065571efa19a99abe710884b0103.setContent(html_b234f827ad93ddc6492d365e7ea74315);
+            
+        
+
+        marker_be96d7f74e97141254712692d1ec477e.bindPopup(popup_1a8a065571efa19a99abe710884b0103)
+        ;
+
+        
+    
+    
+            var marker_0a38ece791215c3f76663b897e10731b = L.marker(
+                [42.374640368421055, -71.24993452631578],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_61bdf840e1fb5cf179901b94bf3d23ee = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_0a38ece791215c3f76663b897e10731b.setIcon(icon_61bdf840e1fb5cf179901b94bf3d23ee);
+        
+    
+        var popup_40d17d4eeb8bb94d12737ed01bf6cece = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_ad3988fc6f04a15da6247cbd98a289d9 = $(`<div id="html_ad3988fc6f04a15da6247cbd98a289d9" style="width: 100.0%; height: 100.0%;">Address: 32 South St, Waltham, MA 02453<br>                Census tract: 3683.0<br>                Population: 5763<br>                Median Income: 78088.0</div>`)[0];
+                popup_40d17d4eeb8bb94d12737ed01bf6cece.setContent(html_ad3988fc6f04a15da6247cbd98a289d9);
+            
+        
+
+        marker_0a38ece791215c3f76663b897e10731b.bindPopup(popup_40d17d4eeb8bb94d12737ed01bf6cece)
+        ;
+
+        
+    
+    
+            var marker_3b63a03889d115ae8526f485dc9de231 = L.marker(
+                [42.41155506714989, -71.23347200741422],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_b1eab2abff0fdd293e8762fa4309c5ef = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3b63a03889d115ae8526f485dc9de231.setIcon(icon_b1eab2abff0fdd293e8762fa4309c5ef);
+        
+    
+        var popup_0fd7d661db8c39ee5c51c8f9faa77b63 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_7c2d7df5b54a2991411960acf96b2e77 = $(`<div id="html_7c2d7df5b54a2991411960acf96b2e77" style="width: 100.0%; height: 100.0%;">Address: 1077 Lexington St, Waltham, MA 02452<br>                Census tract: 3689.01<br>                Population: 5973<br>                Median Income: 92404.0</div>`)[0];
+                popup_0fd7d661db8c39ee5c51c8f9faa77b63.setContent(html_7c2d7df5b54a2991411960acf96b2e77);
+            
+        
+
+        marker_3b63a03889d115ae8526f485dc9de231.bindPopup(popup_0fd7d661db8c39ee5c51c8f9faa77b63)
+        ;
+
+        
+    
+    
+            var marker_aef150bd60f4cf52175aadf5f7307592 = L.marker(
+                [42.37045655, -71.23830914580535],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_d7db24c1e0d9b1e3f488f3fea38928cd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_aef150bd60f4cf52175aadf5f7307592.setIcon(icon_d7db24c1e0d9b1e3f488f3fea38928cd);
+        
+    
+        var popup_eea50f404dfaf8ccde4fdc96aae275cb = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_40be20df178d0f617ebe9a83c67d7da5 = $(`<div id="html_40be20df178d0f617ebe9a83c67d7da5" style="width: 100.0%; height: 100.0%;">Address: 29 Spruce St, Waltham, MA 02453<br>                Census tract: 3685.0<br>                Population: 3419<br>                Median Income: 52976.0</div>`)[0];
+                popup_eea50f404dfaf8ccde4fdc96aae275cb.setContent(html_40be20df178d0f617ebe9a83c67d7da5);
+            
+        
+
+        marker_aef150bd60f4cf52175aadf5f7307592.bindPopup(popup_eea50f404dfaf8ccde4fdc96aae275cb)
+        ;
+
+        
+    
+    
+            var marker_b0d63881edd9aafcd66f6cdedd989bde = L.marker(
+                [42.374640368421055, -71.24993452631578],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_9f5a5cf23c800fb2f838732c3dfa5289 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b0d63881edd9aafcd66f6cdedd989bde.setIcon(icon_9f5a5cf23c800fb2f838732c3dfa5289);
+        
+    
+        var popup_069dbb5710ad2899f85407878ae16b2d = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_123a5594dcc39314ebeb4addcfc0296b = $(`<div id="html_123a5594dcc39314ebeb4addcfc0296b" style="width: 100.0%; height: 100.0%;">Address: 32 South St, Waltham, MA 02453<br>                Census tract: 3683.0<br>                Population: 5763<br>                Median Income: 78088.0</div>`)[0];
+                popup_069dbb5710ad2899f85407878ae16b2d.setContent(html_123a5594dcc39314ebeb4addcfc0296b);
+            
+        
+
+        marker_b0d63881edd9aafcd66f6cdedd989bde.bindPopup(popup_069dbb5710ad2899f85407878ae16b2d)
+        ;
+
+        
+    
+    
+            var marker_c220e63adf1aaacd1715174363537840 = L.marker(
+                [42.3761905, -71.24637778571429],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_03cf17ea40e6f84415f8f64317cf557e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c220e63adf1aaacd1715174363537840.setIcon(icon_03cf17ea40e6f84415f8f64317cf557e);
+        
+    
+        var popup_4dd4b0b3e7697e290657847543637203 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_1e75d8fe098c994230827a0a29095e7d = $(`<div id="html_1e75d8fe098c994230827a0a29095e7d" style="width: 100.0%; height: 100.0%;">Address: 879 Main St, Waltham, MA 02451<br>                Census tract: 3683.0<br>                Population: 5763<br>                Median Income: 78088.0</div>`)[0];
+                popup_4dd4b0b3e7697e290657847543637203.setContent(html_1e75d8fe098c994230827a0a29095e7d);
+            
+        
+
+        marker_c220e63adf1aaacd1715174363537840.bindPopup(popup_4dd4b0b3e7697e290657847543637203)
+        ;
+
+        
+    
+    
+            var marker_2fcdf09b980c365f5415e2cf4b2f87d5 = L.marker(
+                [42.37624594117647, -71.25308905882353],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_d7d9511b23655e6b015e46a79d34b00b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2fcdf09b980c365f5415e2cf4b2f87d5.setIcon(icon_d7d9511b23655e6b015e46a79d34b00b);
+        
+    
+        var popup_c5700374e97cefdd8b6eee928b529e2a = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_cb7fdc365d6c73e11e0c8e5c66af8ea4 = $(`<div id="html_cb7fdc365d6c73e11e0c8e5c66af8ea4" style="width: 100.0%; height: 100.0%;">Address: 1030 Main St, Waltham, MA 02451<br>                Census tract: 3683.0<br>                Population: 5763<br>                Median Income: 78088.0</div>`)[0];
+                popup_c5700374e97cefdd8b6eee928b529e2a.setContent(html_cb7fdc365d6c73e11e0c8e5c66af8ea4);
+            
+        
+
+        marker_2fcdf09b980c365f5415e2cf4b2f87d5.bindPopup(popup_c5700374e97cefdd8b6eee928b529e2a)
+        ;
+
+        
+    
+    
+            var marker_98282e0ad6bb11c2eaf05e7f587496a7 = L.marker(
+                [42.37022869240519, -71.2487848904995],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_2293dc786ca270f267d940b200deaab5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_98282e0ad6bb11c2eaf05e7f587496a7.setIcon(icon_2293dc786ca270f267d940b200deaab5);
+        
+    
+        var popup_0f6cce5fb57eca704d43eacc9cb89fc5 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_99accff583fa333134fcc1c306375baa = $(`<div id="html_99accff583fa333134fcc1c306375baa" style="width: 100.0%; height: 100.0%;">Address: 20 Hope Ave, Waltham, MA 02453<br>                Census tract: 3684.0<br>                Population: 8606<br>                Median Income: 83036.0</div>`)[0];
+                popup_0f6cce5fb57eca704d43eacc9cb89fc5.setContent(html_99accff583fa333134fcc1c306375baa);
+            
+        
+
+        marker_98282e0ad6bb11c2eaf05e7f587496a7.bindPopup(popup_0f6cce5fb57eca704d43eacc9cb89fc5)
+        ;
+
+        
+    
+    
+            var marker_5fa944c054cd3bad74e2f03172634eb5 = L.marker(
+                [42.36982610526316, -71.23704605263158],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_bbabdb3f1324b267444db4a9b47ade4b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5fa944c054cd3bad74e2f03172634eb5.setIcon(icon_bbabdb3f1324b267444db4a9b47ade4b);
+        
+    
+        var popup_7d923600af0a31a9d9b137d679e938ad = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_60cc1870ed18565ce42ea50248f61c42 = $(`<div id="html_60cc1870ed18565ce42ea50248f61c42" style="width: 100.0%; height: 100.0%;">Address: 376 Moody St, Waltham, MA 02453<br>                Census tract: 3685.0<br>                Population: 3419<br>                Median Income: 52976.0</div>`)[0];
+                popup_7d923600af0a31a9d9b137d679e938ad.setContent(html_60cc1870ed18565ce42ea50248f61c42);
+            
+        
+
+        marker_5fa944c054cd3bad74e2f03172634eb5.bindPopup(popup_7d923600af0a31a9d9b137d679e938ad)
+        ;
+
+        
+    
+    
+            var marker_c23aac4d76b6b6f5c7a7460ac4d5675c = L.marker(
+                [42.37242912903226, -71.23682896774194],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_bfef5db1932e46b9c2dab3e5a596764f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c23aac4d76b6b6f5c7a7460ac4d5675c.setIcon(icon_bfef5db1932e46b9c2dab3e5a596764f);
+        
+    
+        var popup_19211c7c2ea68e60004e4b6d3090b2c3 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_fc2010d7f49f2710b2ce248de5bace43 = $(`<div id="html_fc2010d7f49f2710b2ce248de5bace43" style="width: 100.0%; height: 100.0%;">Address: 225 Moody St, Waltham, MA 02453<br>                Census tract: 3685.0<br>                Population: 3419<br>                Median Income: 52976.0</div>`)[0];
+                popup_19211c7c2ea68e60004e4b6d3090b2c3.setContent(html_fc2010d7f49f2710b2ce248de5bace43);
+            
+        
+
+        marker_c23aac4d76b6b6f5c7a7460ac4d5675c.bindPopup(popup_19211c7c2ea68e60004e4b6d3090b2c3)
+        ;
+
+        
+    
+    
+            var marker_8b2547a0d61cd6ff1f0c2f6cdba2cea5 = L.marker(
+                [42.371705083642595, -71.23756354738795],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_a681a845da11949fdc4d13d0cccd03c4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8b2547a0d61cd6ff1f0c2f6cdba2cea5.setIcon(icon_a681a845da11949fdc4d13d0cccd03c4);
+        
+    
+        var popup_a01797c9965160a80dfbf3e625d1f417 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_bd70c782c8af5cf4037a29f891bf3dda = $(`<div id="html_bd70c782c8af5cf4037a29f891bf3dda" style="width: 100.0%; height: 100.0%;">Address: 24 Crescent St, Waltham, MA 02453<br>                Census tract: 3685.0<br>                Population: 3419<br>                Median Income: 52976.0</div>`)[0];
+                popup_a01797c9965160a80dfbf3e625d1f417.setContent(html_bd70c782c8af5cf4037a29f891bf3dda);
+            
+        
+
+        marker_8b2547a0d61cd6ff1f0c2f6cdba2cea5.bindPopup(popup_a01797c9965160a80dfbf3e625d1f417)
+        ;
+
+        
+    
+    
+            var marker_084194f6ceb9dd96a6225e280a48d1aa = L.marker(
+                [42.40743225, -71.25532295314008],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_910e470fbc923de9259bc809844ea86e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_084194f6ceb9dd96a6225e280a48d1aa.setIcon(icon_910e470fbc923de9259bc809844ea86e);
+        
+    
+        var popup_8c9834266eda02e42cefbba763ed6509 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_6590d51bb7e94908aee05bb86411f514 = $(`<div id="html_6590d51bb7e94908aee05bb86411f514" style="width: 100.0%; height: 100.0%;">Address: 303 Wyman St, Waltham, MA 02451<br>                Census tract: 3681.02<br>                Population: 4718<br>                Median Income: 102083.0</div>`)[0];
+                popup_8c9834266eda02e42cefbba763ed6509.setContent(html_6590d51bb7e94908aee05bb86411f514);
+            
+        
+
+        marker_084194f6ceb9dd96a6225e280a48d1aa.bindPopup(popup_8c9834266eda02e42cefbba763ed6509)
+        ;
+
+        
+    
+    
+            var marker_4c915ed521a259eb54b6b79d1c453534 = L.marker(
+                [42.37693332451917, -71.23131197021372],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_7d63ef1926bbe8d18e382dc03fa4327d = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4c915ed521a259eb54b6b79d1c453534.setIcon(icon_7d63ef1926bbe8d18e382dc03fa4327d);
+        
+    
+        var popup_3e8268ac3ec9105c4626557ec17173ba = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_d52385985621469f80f12dd5ddce32fd = $(`<div id="html_d52385985621469f80f12dd5ddce32fd" style="width: 100.0%; height: 100.0%;">Address: 520 Main St, Waltham, MA 02452<br>                Census tract: 3688.0<br>                Population: 6169<br>                Median Income: 76929.0</div>`)[0];
+                popup_3e8268ac3ec9105c4626557ec17173ba.setContent(html_d52385985621469f80f12dd5ddce32fd);
+            
+        
+
+        marker_4c915ed521a259eb54b6b79d1c453534.bindPopup(popup_3e8268ac3ec9105c4626557ec17173ba)
+        ;
+
+        
+    
+    
+            var marker_9b771fe1900a55c99e266ee86170ae9f = L.marker(
+                [42.394517, -71.236786],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_fbcf1390020a637b3f95038363a14938 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_9b771fe1900a55c99e266ee86170ae9f.setIcon(icon_fbcf1390020a637b3f95038363a14938);
+        
+    
+        var popup_26ea64e99cff2b38d8ecdd765bfcd339 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_32fa1b122516117b3fe4968a5d713bec = $(`<div id="html_32fa1b122516117b3fe4968a5d713bec" style="width: 100.0%; height: 100.0%;">Address: 549 Lexington St, Waltham, MA 02452<br>                Census tract: 3689.01<br>                Population: 5973<br>                Median Income: 92404.0</div>`)[0];
+                popup_26ea64e99cff2b38d8ecdd765bfcd339.setContent(html_32fa1b122516117b3fe4968a5d713bec);
+            
+        
+
+        marker_9b771fe1900a55c99e266ee86170ae9f.bindPopup(popup_26ea64e99cff2b38d8ecdd765bfcd339)
+        ;
+
+        
+    
+    
+            var marker_ed32bb64a8a592d81e564620890089a5 = L.marker(
+                [42.39723, -71.263853],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_25253fb672aa1ac0767fa1268be1df86 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ed32bb64a8a592d81e564620890089a5.setIcon(icon_25253fb672aa1ac0767fa1268be1df86);
+        
+    
+        var popup_2a71173dd83b2fb23470a86023664a50 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_76cfc7a8deb6eb3f200612a67d47faa3 = $(`<div id="html_76cfc7a8deb6eb3f200612a67d47faa3" style="width: 100.0%; height: 100.0%;">Address: 52 2nd Ave, Waltham, MA 02451<br>                Census tract: 3682.0<br>                Population: 4198<br>                Median Income: 112778.0</div>`)[0];
+                popup_2a71173dd83b2fb23470a86023664a50.setContent(html_76cfc7a8deb6eb3f200612a67d47faa3);
+            
+        
+
+        marker_ed32bb64a8a592d81e564620890089a5.bindPopup(popup_2a71173dd83b2fb23470a86023664a50)
+        ;
+
+        
+    
+    
+            var marker_b4d18af289dc45a8fdb2ecc4a6ea8b68 = L.marker(
+                [42.375903, -71.213281],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_8131ec120244460c405ddf0d2fe12cc5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b4d18af289dc45a8fdb2ecc4a6ea8b68.setIcon(icon_8131ec120244460c405ddf0d2fe12cc5);
+        
+    
+        var popup_c30c3a459ed4606864a66a9c3710a27a = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_b4945d1280ed19abe7d96d40108c9c83 = $(`<div id="html_b4945d1280ed19abe7d96d40108c9c83" style="width: 100.0%; height: 100.0%;">Address: 131 Main St, Waltham, MA 02453<br>                Census tract: 3691.0<br>                Population: 5059<br>                Median Income: 87109.0</div>`)[0];
+                popup_c30c3a459ed4606864a66a9c3710a27a.setContent(html_b4945d1280ed19abe7d96d40108c9c83);
+            
+        
+
+        marker_b4d18af289dc45a8fdb2ecc4a6ea8b68.bindPopup(popup_c30c3a459ed4606864a66a9c3710a27a)
+        ;
+
+        
+    
+    
+            var marker_1af17b95416f21d1e430dd3ea9a785f9 = L.marker(
+                [42.3696743, -71.2195238],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_3d2dfa3efd9d2627d1c7eb66a0823dda = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1af17b95416f21d1e430dd3ea9a785f9.setIcon(icon_3d2dfa3efd9d2627d1c7eb66a0823dda);
+        
+    
+        var popup_a7ca58e0f5bc6f0da1c9ba736e9d3771 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_f233e42d9ee2ca67dba65c995bf5200f = $(`<div id="html_f233e42d9ee2ca67dba65c995bf5200f" style="width: 100.0%; height: 100.0%;">Address: 85 River St, Waltham, MA 02453<br>                Census tract: 3688.0<br>                Population: 6169<br>                Median Income: 76929.0</div>`)[0];
+                popup_a7ca58e0f5bc6f0da1c9ba736e9d3771.setContent(html_f233e42d9ee2ca67dba65c995bf5200f);
+            
+        
+
+        marker_1af17b95416f21d1e430dd3ea9a785f9.bindPopup(popup_a7ca58e0f5bc6f0da1c9ba736e9d3771)
+        ;
+
+        
+    
+    
+            var marker_2253aad45e78303ed873ee513b60a9b1 = L.marker(
+                [42.37622521428571, -71.25107771428571],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_bb5b6d036701624cc3acca5bea1faaa5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2253aad45e78303ed873ee513b60a9b1.setIcon(icon_bb5b6d036701624cc3acca5bea1faaa5);
+        
+    
+        var popup_31d1874a643b704a6cad1203586211fa = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_23673b17abb0e1ccd9380bf5cc40e967 = $(`<div id="html_23673b17abb0e1ccd9380bf5cc40e967" style="width: 100.0%; height: 100.0%;">Address: 976 Main St, Waltham, MA 02451<br>                Census tract: 3683.0<br>                Population: 5763<br>                Median Income: 78088.0</div>`)[0];
+                popup_31d1874a643b704a6cad1203586211fa.setContent(html_23673b17abb0e1ccd9380bf5cc40e967);
+            
+        
+
+        marker_2253aad45e78303ed873ee513b60a9b1.bindPopup(popup_31d1874a643b704a6cad1203586211fa)
+        ;
+
+        
+    
+    
+            var marker_cb543bfbfb73ad81e06aa6f6ca85b0b0 = L.marker(
+                [42.39723, -71.263853],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_6cf0cf380c44baa869169c2823eae380 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_cb543bfbfb73ad81e06aa6f6ca85b0b0.setIcon(icon_6cf0cf380c44baa869169c2823eae380);
+        
+    
+        var popup_2f7a41d9360311422c32840514c4098c = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_d316d0b06c4f0a51fd6fd4b4691a9085 = $(`<div id="html_d316d0b06c4f0a51fd6fd4b4691a9085" style="width: 100.0%; height: 100.0%;">Address: 52 2nd Ave, Waltham, MA 02451<br>                Census tract: 3682.0<br>                Population: 4198<br>                Median Income: 112778.0</div>`)[0];
+                popup_2f7a41d9360311422c32840514c4098c.setContent(html_d316d0b06c4f0a51fd6fd4b4691a9085);
+            
+        
+
+        marker_cb543bfbfb73ad81e06aa6f6ca85b0b0.bindPopup(popup_2f7a41d9360311422c32840514c4098c)
+        ;
+
+        
+    
+    
+            var marker_998a8ac14d73370da0fa1935db12a684 = L.marker(
+                [42.37242912903226, -71.23682896774194],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_903f5730d1fb802e6cfc47a06e69dce9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_998a8ac14d73370da0fa1935db12a684.setIcon(icon_903f5730d1fb802e6cfc47a06e69dce9);
+        
+    
+        var popup_91cbf5180c3b77627c3444e407579095 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_0e31748639807713436309ddb64fd0d6 = $(`<div id="html_0e31748639807713436309ddb64fd0d6" style="width: 100.0%; height: 100.0%;">Address: 225 Moody St, Waltham, MA 02453<br>                Census tract: 3685.0<br>                Population: 3419<br>                Median Income: 52976.0</div>`)[0];
+                popup_91cbf5180c3b77627c3444e407579095.setContent(html_0e31748639807713436309ddb64fd0d6);
+            
+        
+
+        marker_998a8ac14d73370da0fa1935db12a684.bindPopup(popup_91cbf5180c3b77627c3444e407579095)
+        ;
+
+        
+    
+    
+            var marker_f6b5ea77a893b8178a9f15ed25bdde84 = L.marker(
+                [42.3761905, -71.24637778571429],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_51051749ab759b573bbcbe7646fbbab5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f6b5ea77a893b8178a9f15ed25bdde84.setIcon(icon_51051749ab759b573bbcbe7646fbbab5);
+        
+    
+        var popup_68a71fc79f0f02f7a9b3e926e94b0194 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_0fbbc419d9144c8df7cb8f44c6f89fd6 = $(`<div id="html_0fbbc419d9144c8df7cb8f44c6f89fd6" style="width: 100.0%; height: 100.0%;">Address: 879 Main St, Waltham, MA 02451<br>                Census tract: 3683.0<br>                Population: 5763<br>                Median Income: 78088.0</div>`)[0];
+                popup_68a71fc79f0f02f7a9b3e926e94b0194.setContent(html_0fbbc419d9144c8df7cb8f44c6f89fd6);
+            
+        
+
+        marker_f6b5ea77a893b8178a9f15ed25bdde84.bindPopup(popup_68a71fc79f0f02f7a9b3e926e94b0194)
+        ;
+
+        
+    
+    
+            var marker_5a9325ce389ade9a15ff5e20917032f0 = L.marker(
+                [42.37622521428571, -71.25107771428571],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_ac7785e4e31ca56d4aa9c35b2e5590a4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5a9325ce389ade9a15ff5e20917032f0.setIcon(icon_ac7785e4e31ca56d4aa9c35b2e5590a4);
+        
+    
+        var popup_d476ceeb34bd4984ba757cbd2b2dd96c = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_74726697ba6d984c8e65ffc1cf5ab7fa = $(`<div id="html_74726697ba6d984c8e65ffc1cf5ab7fa" style="width: 100.0%; height: 100.0%;">Address: 976 Main St, Waltham, MA 02451<br>                Census tract: 3683.0<br>                Population: 5763<br>                Median Income: 78088.0</div>`)[0];
+                popup_d476ceeb34bd4984ba757cbd2b2dd96c.setContent(html_74726697ba6d984c8e65ffc1cf5ab7fa);
+            
+        
+
+        marker_5a9325ce389ade9a15ff5e20917032f0.bindPopup(popup_d476ceeb34bd4984ba757cbd2b2dd96c)
+        ;
+
+        
+    
+    
+            var marker_da745359ee0c993920e8d04846427679 = L.marker(
+                [42.3696743, -71.2195238],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_01b1fe9705dcead7ce4258a88410640f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_da745359ee0c993920e8d04846427679.setIcon(icon_01b1fe9705dcead7ce4258a88410640f);
+        
+    
+        var popup_9c5ba50ba37fe6d137196d2c469cae00 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_1833b8ab667f62d6cece8b57c53ee950 = $(`<div id="html_1833b8ab667f62d6cece8b57c53ee950" style="width: 100.0%; height: 100.0%;">Address: 85 River St, Waltham, MA 02453<br>                Census tract: 3688.0<br>                Population: 6169<br>                Median Income: 76929.0</div>`)[0];
+                popup_9c5ba50ba37fe6d137196d2c469cae00.setContent(html_1833b8ab667f62d6cece8b57c53ee950);
+            
+        
+
+        marker_da745359ee0c993920e8d04846427679.bindPopup(popup_9c5ba50ba37fe6d137196d2c469cae00)
+        ;
+
+        
+    
+    
+            var marker_4dd2ee4dfd0413262147e1051af5c04c = L.marker(
+                [42.37693332451917, -71.23131197021372],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_db8f57dd8eb40b9ffbdde19ca3251308 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4dd2ee4dfd0413262147e1051af5c04c.setIcon(icon_db8f57dd8eb40b9ffbdde19ca3251308);
+        
+    
+        var popup_ec8f9aeb094a8bb11787b105e161d6d8 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_f6a6851546c8431789b66868cf7f8978 = $(`<div id="html_f6a6851546c8431789b66868cf7f8978" style="width: 100.0%; height: 100.0%;">Address: 520 Main St, Waltham, MA 02452<br>                Census tract: 3688.0<br>                Population: 6169<br>                Median Income: 76929.0</div>`)[0];
+                popup_ec8f9aeb094a8bb11787b105e161d6d8.setContent(html_f6a6851546c8431789b66868cf7f8978);
+            
+        
+
+        marker_4dd2ee4dfd0413262147e1051af5c04c.bindPopup(popup_ec8f9aeb094a8bb11787b105e161d6d8)
+        ;
+
+        
+    
+    
+            var marker_a6bfd4e24b7f9f09b94c795619e4152b = L.marker(
+                [42.4180696, -71.231155],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_26ac408bc0c8181e490541a2b9e4d368 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a6bfd4e24b7f9f09b94c795619e4152b.setIcon(icon_26ac408bc0c8181e490541a2b9e4d368);
+        
+    
+        var popup_841862d5b66d269c65614b4f68aa84f7 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_be816a02ad23e02d2601d6c27b3125a6 = $(`<div id="html_be816a02ad23e02d2601d6c27b3125a6" style="width: 100.0%; height: 100.0%;">Address: 922 Waltham St, Lexington, MA 02421<br>                Census tract: 3583.0<br>                Population: 6380<br>                Median Income: 131250.0</div>`)[0];
+                popup_841862d5b66d269c65614b4f68aa84f7.setContent(html_be816a02ad23e02d2601d6c27b3125a6);
+            
+        
+
+        marker_a6bfd4e24b7f9f09b94c795619e4152b.bindPopup(popup_841862d5b66d269c65614b4f68aa84f7)
+        ;
+
+        
+    
+    
+            var marker_40677572935fc261fbe46b256f414277 = L.marker(
+                [42.3696743, -71.2195238],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_654a305f3cd2f15cdec8fac29d40da8c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_40677572935fc261fbe46b256f414277.setIcon(icon_654a305f3cd2f15cdec8fac29d40da8c);
+        
+    
+        var popup_71ff2fd43ea894ff78e2dda00f28c983 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_3b92614b10796e578299f52bbac3dc51 = $(`<div id="html_3b92614b10796e578299f52bbac3dc51" style="width: 100.0%; height: 100.0%;">Address: 85 River St, Waltham, MA 02453<br>                Census tract: 3688.0<br>                Population: 6169<br>                Median Income: 76929.0</div>`)[0];
+                popup_71ff2fd43ea894ff78e2dda00f28c983.setContent(html_3b92614b10796e578299f52bbac3dc51);
+            
+        
+
+        marker_40677572935fc261fbe46b256f414277.bindPopup(popup_71ff2fd43ea894ff78e2dda00f28c983)
+        ;
+
+        
+    
+    
+            var marker_5f9f376c49f90f1d05b48857de007f1c = L.marker(
+                [42.3883030625, -71.20070625],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_d4ab242a89775c3c990fe25969888a15 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5f9f376c49f90f1d05b48857de007f1c.setIcon(icon_d4ab242a89775c3c990fe25969888a15);
+        
+    
+        var popup_e484197daca8c57a48ae1c5ca79ca1ff = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_c3e60d95925b0fbf4ec0eb8a9a4f4ee0 = $(`<div id="html_c3e60d95925b0fbf4ec0eb8a9a4f4ee0" style="width: 100.0%; height: 100.0%;">Address: 465 Waverley Oaks Rd, Waltham, MA 02452<br>                Census tract: 3691.0<br>                Population: 5059<br>                Median Income: 87109.0</div>`)[0];
+                popup_e484197daca8c57a48ae1c5ca79ca1ff.setContent(html_c3e60d95925b0fbf4ec0eb8a9a4f4ee0);
+            
+        
+
+        marker_5f9f376c49f90f1d05b48857de007f1c.bindPopup(popup_e484197daca8c57a48ae1c5ca79ca1ff)
+        ;
+
+        
+    
+    
+            var marker_5d75e705386f9dbc00dd704bf55da32a = L.marker(
+                [42.37368428571429, -71.20614171428572],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_e077afacc86faaa1c66f3b54487c4c80 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5d75e705386f9dbc00dd704bf55da32a.setIcon(icon_e077afacc86faaa1c66f3b54487c4c80);
+        
+    
+        var popup_0a595dfba44750f447d036e1b5e184fa = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_e3c09e421cbe6317f6f72dd782d99631 = $(`<div id="html_e3c09e421cbe6317f6f72dd782d99631" style="width: 100.0%; height: 100.0%;">Address: 695 Main St, Waltham, MA 02451<br>                Census tract: 3689.02<br>                Population: 3691<br>                Median Income: 59375.0</div>`)[0];
+                popup_0a595dfba44750f447d036e1b5e184fa.setContent(html_e3c09e421cbe6317f6f72dd782d99631);
+            
+        
+
+        marker_5d75e705386f9dbc00dd704bf55da32a.bindPopup(popup_0a595dfba44750f447d036e1b5e184fa)
+        ;
+
+        
+    
+    
+            var marker_2a332c92f0815a9813f349e436a9791f = L.marker(
+                [42.37022869240519, -71.2487848904995],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_f898240cb7087979bbc9b553efcabaab = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2a332c92f0815a9813f349e436a9791f.setIcon(icon_f898240cb7087979bbc9b553efcabaab);
+        
+    
+        var popup_d1612143e9130af6fb82900c078defa3 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_0c8664a78d7f74e6bc439f7296fbfc4e = $(`<div id="html_0c8664a78d7f74e6bc439f7296fbfc4e" style="width: 100.0%; height: 100.0%;">Address: 20 Hope Ave, Waltham, MA 02453<br>                Census tract: 3684.0<br>                Population: 8606<br>                Median Income: 83036.0</div>`)[0];
+                popup_d1612143e9130af6fb82900c078defa3.setContent(html_0c8664a78d7f74e6bc439f7296fbfc4e);
+            
+        
+
+        marker_2a332c92f0815a9813f349e436a9791f.bindPopup(popup_d1612143e9130af6fb82900c078defa3)
+        ;
+
+        
+    
+    
+            var marker_fa188abacfba8a2171ee8548d12918f4 = L.marker(
+                [42.374640368421055, -71.24993452631578],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_7ff80a06df3e751fd6c25ea7551cfdde = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_fa188abacfba8a2171ee8548d12918f4.setIcon(icon_7ff80a06df3e751fd6c25ea7551cfdde);
+        
+    
+        var popup_c74fcb525c5433f0ddd63bb112b5c29a = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_345c14efdda1147b76e2d29b4caae4b3 = $(`<div id="html_345c14efdda1147b76e2d29b4caae4b3" style="width: 100.0%; height: 100.0%;">Address: 32 South St, Waltham, MA 02453<br>                Census tract: 3683.0<br>                Population: 5763<br>                Median Income: 78088.0</div>`)[0];
+                popup_c74fcb525c5433f0ddd63bb112b5c29a.setContent(html_345c14efdda1147b76e2d29b4caae4b3);
+            
+        
+
+        marker_fa188abacfba8a2171ee8548d12918f4.bindPopup(popup_c74fcb525c5433f0ddd63bb112b5c29a)
+        ;
+
+        
+    
+    
+            var marker_d9bb0531cdac3b5a6473abd183c1b46c = L.marker(
+                [42.410275999999996, -71.23133899999999],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_520ed0614bf910ec5b2a6cbfeb7d8f42 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d9bb0531cdac3b5a6473abd183c1b46c.setIcon(icon_520ed0614bf910ec5b2a6cbfeb7d8f42);
+        
+    
+        var popup_41fa70086feb3455f34fb700ce060c05 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_e1b02af32936883219fe6aa5b317b847 = $(`<div id="html_e1b02af32936883219fe6aa5b317b847" style="width: 100.0%; height: 100.0%;">Address: 965 Trapelo Rd, Waltham, MA 02452<br>                Census tract: 3689.01<br>                Population: 5973<br>                Median Income: 92404.0</div>`)[0];
+                popup_41fa70086feb3455f34fb700ce060c05.setContent(html_e1b02af32936883219fe6aa5b317b847);
+            
+        
+
+        marker_d9bb0531cdac3b5a6473abd183c1b46c.bindPopup(popup_41fa70086feb3455f34fb700ce060c05)
+        ;
+
+        
+    
+    
+            var marker_b8e380b1fb317a3a2678beb76d2d6742 = L.marker(
+                [42.3761905, -71.24637778571429],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_9f81a2c8e59f9bc63f18dd8ac520bcbd = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_b8e380b1fb317a3a2678beb76d2d6742.setIcon(icon_9f81a2c8e59f9bc63f18dd8ac520bcbd);
+        
+    
+        var popup_2cbb16745965768d149343b93b18d7f2 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_d01b14e3110a6231fc8e05be062b9cfa = $(`<div id="html_d01b14e3110a6231fc8e05be062b9cfa" style="width: 100.0%; height: 100.0%;">Address: 879 Main St, Waltham, MA 02451<br>                Census tract: 3683.0<br>                Population: 5763<br>                Median Income: 78088.0</div>`)[0];
+                popup_2cbb16745965768d149343b93b18d7f2.setContent(html_d01b14e3110a6231fc8e05be062b9cfa);
+            
+        
+
+        marker_b8e380b1fb317a3a2678beb76d2d6742.bindPopup(popup_2cbb16745965768d149343b93b18d7f2)
+        ;
+
+        
+    
+    
+            var marker_82c1151d0cf4951ee8a79d9e80ac79d4 = L.marker(
+                [42.385113, -71.207291],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_11233dc9c18077c3e3c2dc4d43861aa1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_82c1151d0cf4951ee8a79d9e80ac79d4.setIcon(icon_11233dc9c18077c3e3c2dc4d43861aa1);
+        
+    
+        var popup_1e58ad1b5675c3b87f9f9ace954c6fd1 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_4db995b913705e25cbf8788777ac1956 = $(`<div id="html_4db995b913705e25cbf8788777ac1956" style="width: 100.0%; height: 100.0%;">Address: 271 Waverley Oaks Rd, Waltham, MA 02452<br>                Census tract: 3691.0<br>                Population: 5059<br>                Median Income: 87109.0</div>`)[0];
+                popup_1e58ad1b5675c3b87f9f9ace954c6fd1.setContent(html_4db995b913705e25cbf8788777ac1956);
+            
+        
+
+        marker_82c1151d0cf4951ee8a79d9e80ac79d4.bindPopup(popup_1e58ad1b5675c3b87f9f9ace954c6fd1)
+        ;
+
+        
+    
+    
+            var marker_83bac5fc6ab17ea258e296f731f0caa6 = L.marker(
+                [42.3577231, -71.2398815],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_2795b899ec4c5b46d45208c4035ac88f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_83bac5fc6ab17ea258e296f731f0caa6.setIcon(icon_2795b899ec4c5b46d45208c4035ac88f);
+        
+    
+        var popup_c4b2bdd04b51059af3fd1f668c73e29e = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_f4d0ba78d88df7eb498f430557fb68c0 = $(`<div id="html_f4d0ba78d88df7eb498f430557fb68c0" style="width: 100.0%; height: 100.0%;">Address: 73 Lexington St, Newton, MA 02466<br>                Census tract: 3747.0<br>                Population: 4602<br>                Median Income: 131167.0</div>`)[0];
+                popup_c4b2bdd04b51059af3fd1f668c73e29e.setContent(html_f4d0ba78d88df7eb498f430557fb68c0);
+            
+        
+
+        marker_83bac5fc6ab17ea258e296f731f0caa6.bindPopup(popup_c4b2bdd04b51059af3fd1f668c73e29e)
+        ;
+
+        
+    
+    
+            var marker_f60b7c0247fa19821236ddcebd7cb32c = L.marker(
+                [42.3696743, -71.2195238],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_4c23e901650b290eb2b437f4796d8755 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f60b7c0247fa19821236ddcebd7cb32c.setIcon(icon_4c23e901650b290eb2b437f4796d8755);
+        
+    
+        var popup_489148ca3027957981675ecb82c811a6 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_7a6530a3863b07edc6357c0d69fb41e7 = $(`<div id="html_7a6530a3863b07edc6357c0d69fb41e7" style="width: 100.0%; height: 100.0%;">Address: 85 River St, Waltham, MA 02453<br>                Census tract: 3688.0<br>                Population: 6169<br>                Median Income: 76929.0</div>`)[0];
+                popup_489148ca3027957981675ecb82c811a6.setContent(html_7a6530a3863b07edc6357c0d69fb41e7);
+            
+        
+
+        marker_f60b7c0247fa19821236ddcebd7cb32c.bindPopup(popup_489148ca3027957981675ecb82c811a6)
+        ;
+
+        
+    
+    
+            var marker_f673d89e520490fdebfe8cb37720c450 = L.marker(
+                [42.376729499999996, -71.233118],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_63946e59bb5711c8b889473fab85bff7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_f673d89e520490fdebfe8cb37720c450.setIcon(icon_63946e59bb5711c8b889473fab85bff7);
+        
+    
+        var popup_b90b1f122d6a6648cbb7476380547d23 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_f2968494d82dc8f6a43fc760025f37c5 = $(`<div id="html_f2968494d82dc8f6a43fc760025f37c5" style="width: 100.0%; height: 100.0%;">Address: 564 Main St, Waltham, MA 02452<br>                Census tract: 3688.0<br>                Population: 6169<br>                Median Income: 76929.0</div>`)[0];
+                popup_b90b1f122d6a6648cbb7476380547d23.setContent(html_f2968494d82dc8f6a43fc760025f37c5);
+            
+        
+
+        marker_f673d89e520490fdebfe8cb37720c450.bindPopup(popup_b90b1f122d6a6648cbb7476380547d23)
+        ;
+
+        
+    
+    
+            var marker_44e192f19abff5f39705e3db2ca3efa2 = L.marker(
+                [42.37693332451917, -71.23131197021372],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_d60ed066ada360da27b13cd85a9f419a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_44e192f19abff5f39705e3db2ca3efa2.setIcon(icon_d60ed066ada360da27b13cd85a9f419a);
+        
+    
+        var popup_93c0caeae841bc6af19ce9d9adc89cc3 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_7c2d3630fd09b9a5d0451ae41d22bc51 = $(`<div id="html_7c2d3630fd09b9a5d0451ae41d22bc51" style="width: 100.0%; height: 100.0%;">Address: 520 Main St, Waltham, MA 02452<br>                Census tract: 3688.0<br>                Population: 6169<br>                Median Income: 76929.0</div>`)[0];
+                popup_93c0caeae841bc6af19ce9d9adc89cc3.setContent(html_7c2d3630fd09b9a5d0451ae41d22bc51);
+            
+        
+
+        marker_44e192f19abff5f39705e3db2ca3efa2.bindPopup(popup_93c0caeae841bc6af19ce9d9adc89cc3)
+        ;
+
+        
+    
+    
+            var marker_036f7646b3d5d2a63b57a96272d3d5fc = L.marker(
+                [42.37624594117647, -71.25308905882353],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_5f568955994eff18fd4718a6f353d96b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_036f7646b3d5d2a63b57a96272d3d5fc.setIcon(icon_5f568955994eff18fd4718a6f353d96b);
+        
+    
+        var popup_d4c876ce265ccb0f540e9e5cee9b8b41 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_576888a99af89a56e52e3f0ce651e6a2 = $(`<div id="html_576888a99af89a56e52e3f0ce651e6a2" style="width: 100.0%; height: 100.0%;">Address: 1030 Main St, Waltham, MA 02451<br>                Census tract: 3683.0<br>                Population: 5763<br>                Median Income: 78088.0</div>`)[0];
+                popup_d4c876ce265ccb0f540e9e5cee9b8b41.setContent(html_576888a99af89a56e52e3f0ce651e6a2);
+            
+        
+
+        marker_036f7646b3d5d2a63b57a96272d3d5fc.bindPopup(popup_d4c876ce265ccb0f540e9e5cee9b8b41)
+        ;
+
+        
+    
+    
+            var marker_2235194d48b5b907a0f8bb21cdee6022 = L.marker(
+                [42.37568533333334, -71.24194583333333],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_7af630b7fab48a3f1cf542d91cdb97fb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_2235194d48b5b907a0f8bb21cdee6022.setIcon(icon_7af630b7fab48a3f1cf542d91cdb97fb);
+        
+    
+        var popup_5b09feb580f5b31fedbfb7595b8ea340 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_c14049a930123feaf6a6f88d3990095c = $(`<div id="html_c14049a930123feaf6a6f88d3990095c" style="width: 100.0%; height: 100.0%;">Address: 30 Grant St, Waltham, MA 02453<br>                Census tract: 3683.0<br>                Population: 5763<br>                Median Income: 78088.0</div>`)[0];
+                popup_5b09feb580f5b31fedbfb7595b8ea340.setContent(html_c14049a930123feaf6a6f88d3990095c);
+            
+        
+
+        marker_2235194d48b5b907a0f8bb21cdee6022.bindPopup(popup_5b09feb580f5b31fedbfb7595b8ea340)
+        ;
+
+        
+    
+    
+            var marker_478e3531450b9c49d5f4c3a0d5093c15 = L.marker(
+                [42.375903, -71.213281],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_6a1efa55e23e69e930c2d46b7aa3b789 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_478e3531450b9c49d5f4c3a0d5093c15.setIcon(icon_6a1efa55e23e69e930c2d46b7aa3b789);
+        
+    
+        var popup_d6ac81b64529c6f3ca8deaa728986a12 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_6ac2708976778dce8a1cca336a0aac00 = $(`<div id="html_6ac2708976778dce8a1cca336a0aac00" style="width: 100.0%; height: 100.0%;">Address: 131 Main St, Waltham, MA 02453<br>                Census tract: 3691.0<br>                Population: 5059<br>                Median Income: 87109.0</div>`)[0];
+                popup_d6ac81b64529c6f3ca8deaa728986a12.setContent(html_6ac2708976778dce8a1cca336a0aac00);
+            
+        
+
+        marker_478e3531450b9c49d5f4c3a0d5093c15.bindPopup(popup_d6ac81b64529c6f3ca8deaa728986a12)
+        ;
+
+        
+    
+    
+            var marker_13dbb89f2ef6e38739cc6367a9918b07 = L.marker(
+                [42.37022869240519, -71.2487848904995],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_bb8508be8b526fee361b1e4735f5018c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_13dbb89f2ef6e38739cc6367a9918b07.setIcon(icon_bb8508be8b526fee361b1e4735f5018c);
+        
+    
+        var popup_dc8c37b23ad080a3a9ce10758dd7cdf8 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_545ee933aa67792a79cc41a3f82d6deb = $(`<div id="html_545ee933aa67792a79cc41a3f82d6deb" style="width: 100.0%; height: 100.0%;">Address: 20 Hope Ave, Waltham, MA 02453<br>                Census tract: 3684.0<br>                Population: 8606<br>                Median Income: 83036.0</div>`)[0];
+                popup_dc8c37b23ad080a3a9ce10758dd7cdf8.setContent(html_545ee933aa67792a79cc41a3f82d6deb);
+            
+        
+
+        marker_13dbb89f2ef6e38739cc6367a9918b07.bindPopup(popup_dc8c37b23ad080a3a9ce10758dd7cdf8)
+        ;
+
+        
+    
+    
+            var marker_65b420fdd048e271eec9c183ace239bc = L.marker(
+                [42.41155506714989, -71.23347200741422],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_3cba7876ce79bc0694d1c613dc3d7276 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_65b420fdd048e271eec9c183ace239bc.setIcon(icon_3cba7876ce79bc0694d1c613dc3d7276);
+        
+    
+        var popup_5c0b178782841fab2641158b5d9eb199 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_03f198924ee66268f905679a346d2dd5 = $(`<div id="html_03f198924ee66268f905679a346d2dd5" style="width: 100.0%; height: 100.0%;">Address: 1077 Lexington St, Waltham, MA 02452<br>                Census tract: 3689.01<br>                Population: 5973<br>                Median Income: 92404.0</div>`)[0];
+                popup_5c0b178782841fab2641158b5d9eb199.setContent(html_03f198924ee66268f905679a346d2dd5);
+            
+        
+
+        marker_65b420fdd048e271eec9c183ace239bc.bindPopup(popup_5c0b178782841fab2641158b5d9eb199)
+        ;
+
+        
+    
+    
+            var marker_473272ada8029b945bc03a0e8ac20247 = L.marker(
+                [42.373084, -71.201719],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_0cbb297077cdd55922905410c061ef3a = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_473272ada8029b945bc03a0e8ac20247.setIcon(icon_0cbb297077cdd55922905410c061ef3a);
+        
+    
+        var popup_e1267974a3fc4db744d4430ea40da705 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_717479be964d9a793f8ead72de5d49f0 = $(`<div id="html_717479be964d9a793f8ead72de5d49f0" style="width: 100.0%; height: 100.0%;">Address: 591 Main St, Waltham, MA 02452<br>                Census tract: 3689.02<br>                Population: 3691<br>                Median Income: 59375.0</div>`)[0];
+                popup_e1267974a3fc4db744d4430ea40da705.setContent(html_717479be964d9a793f8ead72de5d49f0);
+            
+        
+
+        marker_473272ada8029b945bc03a0e8ac20247.bindPopup(popup_e1267974a3fc4db744d4430ea40da705)
+        ;
+
+        
+    
+    
+            var marker_242b97a563ba808820d64495db826865 = L.marker(
+                [42.4180696, -71.231155],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_d2fdfe354d56654649e220a72ae2d4e3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_242b97a563ba808820d64495db826865.setIcon(icon_d2fdfe354d56654649e220a72ae2d4e3);
+        
+    
+        var popup_3ada6dedbcef15f6b3477dc0148e9527 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_b6d6bba1ae8c51afb8b5cdb576a21817 = $(`<div id="html_b6d6bba1ae8c51afb8b5cdb576a21817" style="width: 100.0%; height: 100.0%;">Address: 922 Waltham St, Lexington, MA 02421<br>                Census tract: 3583.0<br>                Population: 6380<br>                Median Income: 131250.0</div>`)[0];
+                popup_3ada6dedbcef15f6b3477dc0148e9527.setContent(html_b6d6bba1ae8c51afb8b5cdb576a21817);
+            
+        
+
+        marker_242b97a563ba808820d64495db826865.bindPopup(popup_3ada6dedbcef15f6b3477dc0148e9527)
+        ;
+
+        
+    
+    
+            var marker_d09cfc3bdb2547b0ed2affbc1bd148ec = L.marker(
+                [42.357352000000006, -71.1865327177991],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_b60a395cdae8590c78c86b9d92352388 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d09cfc3bdb2547b0ed2affbc1bd148ec.setIcon(icon_b60a395cdae8590c78c86b9d92352388);
+        
+    
+        var popup_14db37ae2b1f59c998df9166d5d7b854 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_a6210023bbd3b6b81816c69fab0c4e95 = $(`<div id="html_a6210023bbd3b6b81816c69fab0c4e95" style="width: 100.0%; height: 100.0%;">Address: 313 Washington St, Newton, MA 02458<br>                Census tract: 3731.0<br>                Population: 5113<br>                Median Income: 102171.0</div>`)[0];
+                popup_14db37ae2b1f59c998df9166d5d7b854.setContent(html_a6210023bbd3b6b81816c69fab0c4e95);
+            
+        
+
+        marker_d09cfc3bdb2547b0ed2affbc1bd148ec.bindPopup(popup_14db37ae2b1f59c998df9166d5d7b854)
+        ;
+
+        
+    
+    
+            var marker_12aa9e72d4db086bcc15db4cf27837a3 = L.marker(
+                [42.385113, -71.207291],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_30f2f2819322bde47c3c39f7f6d8fd13 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_12aa9e72d4db086bcc15db4cf27837a3.setIcon(icon_30f2f2819322bde47c3c39f7f6d8fd13);
+        
+    
+        var popup_6e4646a992c7b04d7cb16d0d51dfb1f0 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_271330e0e4915efd25929ed09ec02646 = $(`<div id="html_271330e0e4915efd25929ed09ec02646" style="width: 100.0%; height: 100.0%;">Address: 271 Waverley Oaks Rd, Waltham, MA 02452<br>                Census tract: 3691.0<br>                Population: 5059<br>                Median Income: 87109.0</div>`)[0];
+                popup_6e4646a992c7b04d7cb16d0d51dfb1f0.setContent(html_271330e0e4915efd25929ed09ec02646);
+            
+        
+
+        marker_12aa9e72d4db086bcc15db4cf27837a3.bindPopup(popup_6e4646a992c7b04d7cb16d0d51dfb1f0)
+        ;
+
+        
+    
+    
+            var marker_b59f85380f469db5066cfc992a8a2a5c = L.marker(
+                [42.35826483333334, -71.18497150833333],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_9cb84701aa6f49e9399137d1c0441add = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b59f85380f469db5066cfc992a8a2a5c.setIcon(icon_9cb84701aa6f49e9399137d1c0441add);
+        
+    
+        var popup_4021e84431202ef2d63360fd33d381c8 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_fc9bf76ce8726adbc50b3d0f15a238b6 = $(`<div id="html_fc9bf76ce8726adbc50b3d0f15a238b6" style="width: 100.0%; height: 100.0%;">Address: 290 Centre St, Newton, MA 02458<br>                Census tract: 3731.0<br>                Population: 5113<br>                Median Income: 102171.0</div>`)[0];
+                popup_4021e84431202ef2d63360fd33d381c8.setContent(html_fc9bf76ce8726adbc50b3d0f15a238b6);
+            
+        
+
+        marker_b59f85380f469db5066cfc992a8a2a5c.bindPopup(popup_4021e84431202ef2d63360fd33d381c8)
+        ;
+
+        
+    
+    
+            var marker_2b0a1dbda541d421ba8bc62c9492bb1b = L.marker(
+                [42.37020458333333, -71.19354225000001],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_abd2895a0fb06e976fb018ae39eafb1f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_2b0a1dbda541d421ba8bc62c9492bb1b.setIcon(icon_abd2895a0fb06e976fb018ae39eafb1f);
+        
+    
+        var popup_760bc44e34b1ac4467461f753051e3f2 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_16bb197ad2d324b508eee0171291bc9c = $(`<div id="html_16bb197ad2d324b508eee0171291bc9c" style="width: 100.0%; height: 100.0%;">Address: 377 Main St, Watertown, MA 02472<br>                Census tract: 3701.04<br>                Population: 3734<br>                Median Income: 75192.0</div>`)[0];
+                popup_760bc44e34b1ac4467461f753051e3f2.setContent(html_16bb197ad2d324b508eee0171291bc9c);
+            
+        
+
+        marker_2b0a1dbda541d421ba8bc62c9492bb1b.bindPopup(popup_760bc44e34b1ac4467461f753051e3f2)
+        ;
+
+        
+    
+    
+            var marker_4991d3348ac6c53f127053e0c60505ad = L.marker(
+                [42.34810878885349, -71.24694722147161],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_06fefc0e29044ff73fa6368bb4f047b1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4991d3348ac6c53f127053e0c60505ad.setIcon(icon_06fefc0e29044ff73fa6368bb4f047b1);
+        
+    
+        var popup_bdb697ec2b94624616c37a20b122aea7 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_ce03d23732c769be342daa1fc60d5625 = $(`<div id="html_ce03d23732c769be342daa1fc60d5625" style="width: 100.0%; height: 100.0%;">Address: 2098 Commonwealth Ave, Auburndale, MA 02466<br>                Census tract: 3747.0<br>                Population: 4602<br>                Median Income: 131167.0</div>`)[0];
+                popup_bdb697ec2b94624616c37a20b122aea7.setContent(html_ce03d23732c769be342daa1fc60d5625);
+            
+        
+
+        marker_4991d3348ac6c53f127053e0c60505ad.bindPopup(popup_bdb697ec2b94624616c37a20b122aea7)
+        ;
+
+        
+    
+    
+            var marker_de280b07a1b547ee80c5e143a1c6f3f1 = L.marker(
+                [42.36980330992108, -71.17182324137332],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_cc750e48a9673e729dfc6bda6b2ac125 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_de280b07a1b547ee80c5e143a1c6f3f1.setIcon(icon_cc750e48a9673e729dfc6bda6b2ac125);
+        
+    
+        var popup_de5a22428a728a860cb0bd544b4752b2 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_42d2db9cd0b843db62582bef8bc59409 = $(`<div id="html_42d2db9cd0b843db62582bef8bc59409" style="width: 100.0%; height: 100.0%;">Address: 293 Mt Auburn St, Watertown, MA 02472<br>                Census tract: 3704.01<br>                Population: 3531<br>                Median Income: 96786.0</div>`)[0];
+                popup_de5a22428a728a860cb0bd544b4752b2.setContent(html_42d2db9cd0b843db62582bef8bc59409);
+            
+        
+
+        marker_de280b07a1b547ee80c5e143a1c6f3f1.bindPopup(popup_de5a22428a728a860cb0bd544b4752b2)
+        ;
+
+        
+    
+    
+            var marker_308eda08b11def9bd322f069f2f13c01 = L.marker(
+                [42.3577231, -71.2398815],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_dd45d5d04779c39ce3bea2dc2e2f48df = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_308eda08b11def9bd322f069f2f13c01.setIcon(icon_dd45d5d04779c39ce3bea2dc2e2f48df);
+        
+    
+        var popup_af30b7c3277784fb6c090d62ae1d6c4e = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_953300b700248b5cf20554abe6602337 = $(`<div id="html_953300b700248b5cf20554abe6602337" style="width: 100.0%; height: 100.0%;">Address: 73 Lexington St, Auburndale, MA 02466<br>                Census tract: 3747.0<br>                Population: 4602<br>                Median Income: 131167.0</div>`)[0];
+                popup_af30b7c3277784fb6c090d62ae1d6c4e.setContent(html_953300b700248b5cf20554abe6602337);
+            
+        
+
+        marker_308eda08b11def9bd322f069f2f13c01.bindPopup(popup_af30b7c3277784fb6c090d62ae1d6c4e)
+        ;
+
+        
+    
+    
+            var marker_d743f7bcbb0149f9ad4eb4674717048a = L.marker(
+                [42.3577231, -71.2398815],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_4d83515e3b2d69069a15eb9fac06c35e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_d743f7bcbb0149f9ad4eb4674717048a.setIcon(icon_4d83515e3b2d69069a15eb9fac06c35e);
+        
+    
+        var popup_b2f6130f56bbd1e75ee8813e532b1677 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_1f9530a8778b0716248811d4ae4c0dd4 = $(`<div id="html_1f9530a8778b0716248811d4ae4c0dd4" style="width: 100.0%; height: 100.0%;">Address: 73 Lexington St, Auburndale, MA 02466<br>                Census tract: 3747.0<br>                Population: 4602<br>                Median Income: 131167.0</div>`)[0];
+                popup_b2f6130f56bbd1e75ee8813e532b1677.setContent(html_1f9530a8778b0716248811d4ae4c0dd4);
+            
+        
+
+        marker_d743f7bcbb0149f9ad4eb4674717048a.bindPopup(popup_b2f6130f56bbd1e75ee8813e532b1677)
+        ;
+
+        
+    
+    
+            var marker_1089aadaacb5b37ba1e0e74b91fc4d81 = L.marker(
+                [42.3778971, -71.2229673],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_304cc45bf5e70e36be0e4adf3cdb92e4 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_1089aadaacb5b37ba1e0e74b91fc4d81.setIcon(icon_304cc45bf5e70e36be0e4adf3cdb92e4);
+        
+    
+        var popup_ee82f61c5443abbf5a540e218890b997 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_fe9c4caaa50209eee4247ce2632df009 = $(`<div id="html_fe9c4caaa50209eee4247ce2632df009" style="width: 100.0%; height: 100.0%;">Address: 599 Main St, Waltham, MA 02452<br>                Census tract: 3689.02<br>                Population: 3691<br>                Median Income: 59375.0</div>`)[0];
+                popup_ee82f61c5443abbf5a540e218890b997.setContent(html_fe9c4caaa50209eee4247ce2632df009);
+            
+        
+
+        marker_1089aadaacb5b37ba1e0e74b91fc4d81.bindPopup(popup_ee82f61c5443abbf5a540e218890b997)
+        ;
+
+        
+    
+    
+            var marker_4a975cff1e68ddf443402ecb9cda8822 = L.marker(
+                [42.3638119, -71.1937556],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_eadd4b34ed67abe8342aca4789c8c0e3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_4a975cff1e68ddf443402ecb9cda8822.setIcon(icon_eadd4b34ed67abe8342aca4789c8c0e3);
+        
+    
+        var popup_a73c67ff8007dd50fcc37f948e0d4b7f = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_f49ef4c8980aadb65c111ae9d027e21d = $(`<div id="html_f49ef4c8980aadb65c111ae9d027e21d" style="width: 100.0%; height: 100.0%;">Address: 171 Watertown St, Watertown, MA 02472<br>                Census tract: 3704.03<br>                Population: 2070<br>                Median Income: 96786.0</div>`)[0];
+                popup_a73c67ff8007dd50fcc37f948e0d4b7f.setContent(html_f49ef4c8980aadb65c111ae9d027e21d);
+            
+        
+
+        marker_4a975cff1e68ddf443402ecb9cda8822.bindPopup(popup_a73c67ff8007dd50fcc37f948e0d4b7f)
+        ;
+
+        
+    
+    
+            var marker_74c06b563f47c2126c8624195445e73c = L.marker(
+                [42.37368428571429, -71.20614171428572],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_ddc81efd858bcff4c7123361599950d1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_74c06b563f47c2126c8624195445e73c.setIcon(icon_ddc81efd858bcff4c7123361599950d1);
+        
+    
+        var popup_ac20bb54e7dec37691be5492b5428236 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_20250112942cb7c9c39929e6ed562a3f = $(`<div id="html_20250112942cb7c9c39929e6ed562a3f" style="width: 100.0%; height: 100.0%;">Address: 695 Main St, Waltham, MA 02451<br>                Census tract: 3689.02<br>                Population: 3691<br>                Median Income: 59375.0</div>`)[0];
+                popup_ac20bb54e7dec37691be5492b5428236.setContent(html_20250112942cb7c9c39929e6ed562a3f);
+            
+        
+
+        marker_74c06b563f47c2126c8624195445e73c.bindPopup(popup_ac20bb54e7dec37691be5492b5428236)
+        ;
+
+        
+    
+    
+            var marker_0165a850b498df37e8e9e5637380f8ea = L.marker(
+                [42.4180696, -71.231155],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_71d9a6694ad463c082a382138ae51174 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0165a850b498df37e8e9e5637380f8ea.setIcon(icon_71d9a6694ad463c082a382138ae51174);
+        
+    
+        var popup_91e3db046fe5ef467b3e4f3e3297426f = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_6028226376952c62385def716adebbba = $(`<div id="html_6028226376952c62385def716adebbba" style="width: 100.0%; height: 100.0%;">Address: 922 Waltham St, Lexington, MA 02421<br>                Census tract: 3583.0<br>                Population: 6380<br>                Median Income: 131250.0</div>`)[0];
+                popup_91e3db046fe5ef467b3e4f3e3297426f.setContent(html_6028226376952c62385def716adebbba);
+            
+        
+
+        marker_0165a850b498df37e8e9e5637380f8ea.bindPopup(popup_91e3db046fe5ef467b3e4f3e3297426f)
+        ;
+
+        
+    
+    
+            var marker_b080c744d988b5d6db8bd0f80752a679 = L.marker(
+                [42.365253, -71.184535],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_6fc5e53aec0a27e50fa1c8abebd3ce82 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b080c744d988b5d6db8bd0f80752a679.setIcon(icon_6fc5e53aec0a27e50fa1c8abebd3ce82);
+        
+    
+        var popup_9b9831c4209f902ba7db42ca6965615f = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_e752edec12dfc6e3e1510207d3a40a84 = $(`<div id="html_e752edec12dfc6e3e1510207d3a40a84" style="width: 100.0%; height: 100.0%;">Address: 6 Mt Auburn St, Watertown, MA 02472<br>                Census tract: 3701.03<br>                Population: 3544<br>                Median Income: 75192.0</div>`)[0];
+                popup_9b9831c4209f902ba7db42ca6965615f.setContent(html_e752edec12dfc6e3e1510207d3a40a84);
+            
+        
+
+        marker_b080c744d988b5d6db8bd0f80752a679.bindPopup(popup_9b9831c4209f902ba7db42ca6965615f)
+        ;
+
+        
+    
+    
+            var marker_9ee75a5c1196b732f85b030a016bb97b = L.marker(
+                [42.391546250000005, -71.16003062984672],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_b810b9d8ee38a169f92d76d636c70b21 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_9ee75a5c1196b732f85b030a016bb97b.setIcon(icon_b810b9d8ee38a169f92d76d636c70b21);
+        
+    
+        var popup_68f74ba6db78a21569e7358bc96aae26 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_6e0634870487e441e8cccfd11c9755fd = $(`<div id="html_6e0634870487e441e8cccfd11c9755fd" style="width: 100.0%; height: 100.0%;">Address: 57 Concord Ave, Belmont, MA 02478<br>                Census tract: 3572.0<br>                Population: 3243<br>                Median Income: 165375.0</div>`)[0];
+                popup_68f74ba6db78a21569e7358bc96aae26.setContent(html_6e0634870487e441e8cccfd11c9755fd);
+            
+        
+
+        marker_9ee75a5c1196b732f85b030a016bb97b.bindPopup(popup_68f74ba6db78a21569e7358bc96aae26)
+        ;
+
+        
+    
+    
+            var marker_31ff9f5a3b3ef6248338e34310b92ef0 = L.marker(
+                [42.34914405000001, -71.22667441457716],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_37e3efbe4c609a16c47d30a102dc8234 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_31ff9f5a3b3ef6248338e34310b92ef0.setIcon(icon_37e3efbe4c609a16c47d30a102dc8234);
+        
+    
+        var popup_77216812ad631ae69b1abbcdee8221c0 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_bf9b20c4596ff44fb036a41795556986 = $(`<div id="html_bf9b20c4596ff44fb036a41795556986" style="width: 100.0%; height: 100.0%;">Address: 1306 Washington St, West Newton, MA 02465<br>                Census tract: 3745.0<br>                Population: 4586<br>                Median Income: 134250.0</div>`)[0];
+                popup_77216812ad631ae69b1abbcdee8221c0.setContent(html_bf9b20c4596ff44fb036a41795556986);
+            
+        
+
+        marker_31ff9f5a3b3ef6248338e34310b92ef0.bindPopup(popup_77216812ad631ae69b1abbcdee8221c0)
+        ;
+
+        
+    
+    
+            var marker_c42344065d44428694153cb1c463d334 = L.marker(
+                [42.4180696, -71.231155],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_190de76c240a93b83502e5e8b692666f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_c42344065d44428694153cb1c463d334.setIcon(icon_190de76c240a93b83502e5e8b692666f);
+        
+    
+        var popup_8efc508b43c8eddb3c3b2134d80cdabe = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_a4298799fd4e5066fc6f45f8d58b41d6 = $(`<div id="html_a4298799fd4e5066fc6f45f8d58b41d6" style="width: 100.0%; height: 100.0%;">Address: 922 Waltham St, Lexington, MA 02421<br>                Census tract: 3583.0<br>                Population: 6380<br>                Median Income: 131250.0</div>`)[0];
+                popup_8efc508b43c8eddb3c3b2134d80cdabe.setContent(html_a4298799fd4e5066fc6f45f8d58b41d6);
+            
+        
+
+        marker_c42344065d44428694153cb1c463d334.bindPopup(popup_8efc508b43c8eddb3c3b2134d80cdabe)
+        ;
+
+        
+    
+    
+            var marker_4443ef10bc20c2efbf3d6ed81656ae49 = L.marker(
+                [42.4046457, -71.25307063655237],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_af182f556266ebf3902f9fcb654bf4bf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4443ef10bc20c2efbf3d6ed81656ae49.setIcon(icon_af182f556266ebf3902f9fcb654bf4bf);
+        
+    
+        var popup_4f02739b3952fff181920b9f2c76425e = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_53aa89a80019a395212a1caaef655051 = $(`<div id="html_53aa89a80019a395212a1caaef655051" style="width: 100.0%; height: 100.0%;">Address: 590 Lincoln St, Waltham, MA 02451<br>                Census tract: 3681.02<br>                Population: 4718<br>                Median Income: 102083.0</div>`)[0];
+                popup_4f02739b3952fff181920b9f2c76425e.setContent(html_53aa89a80019a395212a1caaef655051);
+            
+        
+
+        marker_4443ef10bc20c2efbf3d6ed81656ae49.bindPopup(popup_4f02739b3952fff181920b9f2c76425e)
+        ;
+
+        
+    
+    
+            var marker_a21da657d56af20eddab330175da8bb6 = L.marker(
+                [42.4177455, -71.1579688],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_1512686bf187e26098e8c1008ce23cd1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_a21da657d56af20eddab330175da8bb6.setIcon(icon_1512686bf187e26098e8c1008ce23cd1);
+        
+    
+        var popup_579e840373f4cda65a2135184ec79b46 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_3550105be8ccb727519bc71732b8c48a = $(`<div id="html_3550105be8ccb727519bc71732b8c48a" style="width: 100.0%; height: 100.0%;">Address: 22 Mill St, Arlington, MA 02476<br>                Census tract: 3567.04<br>                Population: 3890<br>                Median Income: 101735.0</div>`)[0];
+                popup_579e840373f4cda65a2135184ec79b46.setContent(html_3550105be8ccb727519bc71732b8c48a);
+            
+        
+
+        marker_a21da657d56af20eddab330175da8bb6.bindPopup(popup_579e840373f4cda65a2135184ec79b46)
+        ;
+
+        
+    
+    
+            var marker_562e84fd98ce2ae4594ed7f7669e86fa = L.marker(
+                [42.365707400000005, -71.1849472],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_c06f1122cd3f3fe785efafaa0ad9ba00 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_562e84fd98ce2ae4594ed7f7669e86fa.setIcon(icon_c06f1122cd3f3fe785efafaa0ad9ba00);
+        
+    
+        var popup_0e7571ca2b89ecdfc3e3bfbd018feeb5 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_beb26afee5e995a6d1b6f4d3789d9f7b = $(`<div id="html_beb26afee5e995a6d1b6f4d3789d9f7b" style="width: 100.0%; height: 100.0%;">Address: 21 Main St, Watertown, MA 02472<br>                Census tract: 3701.03<br>                Population: 3544<br>                Median Income: 75192.0</div>`)[0];
+                popup_0e7571ca2b89ecdfc3e3bfbd018feeb5.setContent(html_beb26afee5e995a6d1b6f4d3789d9f7b);
+            
+        
+
+        marker_562e84fd98ce2ae4594ed7f7669e86fa.bindPopup(popup_0e7571ca2b89ecdfc3e3bfbd018feeb5)
+        ;
+
+        
+    
+    
+            var marker_d9f7b34579fb3875ee03c278a2e85a9f = L.marker(
+                [42.3297097, -71.1932326],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_56752b0a5d3e998bbb3a7d2923961406 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_d9f7b34579fb3875ee03c278a2e85a9f.setIcon(icon_56752b0a5d3e998bbb3a7d2923961406);
+        
+    
+        var popup_1b2ac3db427a18fe0ccebd84f6c72308 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_aba8062f2069d6372fe99aaf35dde8bf = $(`<div id="html_aba8062f2069d6372fe99aaf35dde8bf" style="width: 100.0%; height: 100.0%;">Address: 93 Union St, Newton Centre, MA 02459<br>                Census tract: 3738.0<br>                Population: 6066<br>                Median Income: 126875.0</div>`)[0];
+                popup_1b2ac3db427a18fe0ccebd84f6c72308.setContent(html_aba8062f2069d6372fe99aaf35dde8bf);
+            
+        
+
+        marker_d9f7b34579fb3875ee03c278a2e85a9f.bindPopup(popup_1b2ac3db427a18fe0ccebd84f6c72308)
+        ;
+
+        
+    
+    
+            var marker_aba5686592204b23515066359ab301ee = L.marker(
+                [42.36644202313811, -71.18135952421561],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_9724311c6864353178c611d195ef5720 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_aba5686592204b23515066359ab301ee.setIcon(icon_9724311c6864353178c611d195ef5720);
+        
+    
+        var popup_e2758855f06b3170d9966f8adea5f821 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_57bda94979868819bf3460c6fb313af6 = $(`<div id="html_57bda94979868819bf3460c6fb313af6" style="width: 100.0%; height: 100.0%;">Address: 63 Mt Auburn St, Watertown, MA 02472<br>                Census tract: 3704.01<br>                Population: 3531<br>                Median Income: 96786.0</div>`)[0];
+                popup_e2758855f06b3170d9966f8adea5f821.setContent(html_57bda94979868819bf3460c6fb313af6);
+            
+        
+
+        marker_aba5686592204b23515066359ab301ee.bindPopup(popup_e2758855f06b3170d9966f8adea5f821)
+        ;
+
+        
+    
+    
+            var marker_5fd926fbf22bab5161e5a1c5a78339df = L.marker(
+                [42.38274737761438, -71.18055186393886],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_e661f22cb5db37890efc8c1539c6a385 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_5fd926fbf22bab5161e5a1c5a78339df.setIcon(icon_e661f22cb5db37890efc8c1539c6a385);
+        
+    
+        var popup_6818062842667d038c4161435c5279e1 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_f2eb93c9fec40578ec71dd9be4b07388 = $(`<div id="html_f2eb93c9fec40578ec71dd9be4b07388" style="width: 100.0%; height: 100.0%;">Address: 250 Trapelo Rd, Belmont, MA 02478<br>                Census tract: 3576.0<br>                Population: 2665<br>                Median Income: 101735.0</div>`)[0];
+                popup_6818062842667d038c4161435c5279e1.setContent(html_f2eb93c9fec40578ec71dd9be4b07388);
+            
+        
+
+        marker_5fd926fbf22bab5161e5a1c5a78339df.bindPopup(popup_6818062842667d038c4161435c5279e1)
+        ;
+
+        
+    
+    
+            var marker_36b374e8bbc0ca1455e67f38bdb2303d = L.marker(
+                [42.370001461538465, -71.19187438461539],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_032f9c428310f6082b51dba187ffe929 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_36b374e8bbc0ca1455e67f38bdb2303d.setIcon(icon_032f9c428310f6082b51dba187ffe929);
+        
+    
+        var popup_0d9e919eacb5eba65f73ebd7542e6ed6 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_453d489f095049b870f527cc81173f05 = $(`<div id="html_453d489f095049b870f527cc81173f05" style="width: 100.0%; height: 100.0%;">Address: 359 Main St, Watertown, MA 02472<br>                Census tract: 3701.04<br>                Population: 3734<br>                Median Income: 75192.0</div>`)[0];
+                popup_0d9e919eacb5eba65f73ebd7542e6ed6.setContent(html_453d489f095049b870f527cc81173f05);
+            
+        
+
+        marker_36b374e8bbc0ca1455e67f38bdb2303d.bindPopup(popup_0d9e919eacb5eba65f73ebd7542e6ed6)
+        ;
+
+        
+    
+    
+            var marker_cf9de6ededecf8d28cfd42bfc4a9e10a = L.marker(
+                [42.33018500608514, -71.19354425611769],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_e8b04288f37f68e2fbe328c5fab741d1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_cf9de6ededecf8d28cfd42bfc4a9e10a.setIcon(icon_e8b04288f37f68e2fbe328c5fab741d1);
+        
+    
+        var popup_a790492c07b11b48520ed163a2437fee = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_6aa836d866df277932ff08d5c7e9d986 = $(`<div id="html_6aa836d866df277932ff08d5c7e9d986" style="width: 100.0%; height: 100.0%;">Address: 796 Beacon St, Newton, MA 02459<br>                Census tract: 3738.0<br>                Population: 6066<br>                Median Income: 126875.0</div>`)[0];
+                popup_a790492c07b11b48520ed163a2437fee.setContent(html_6aa836d866df277932ff08d5c7e9d986);
+            
+        
+
+        marker_cf9de6ededecf8d28cfd42bfc4a9e10a.bindPopup(popup_a790492c07b11b48520ed163a2437fee)
+        ;
+
+        
+    
+    
+            var marker_abfd579463fd78e8493716c49d02f8ed = L.marker(
+                [42.4205264, -71.1701468],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_bdab912bd3058f84940bdb1736d564da = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_abfd579463fd78e8493716c49d02f8ed.setIcon(icon_bdab912bd3058f84940bdb1736d564da);
+        
+    
+        var popup_b7560565536303d17c03b148160ecba9 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_4a803e84c738defc7dd605784f6ded85 = $(`<div id="html_4a803e84c738defc7dd605784f6ded85" style="width: 100.0%; height: 100.0%;">Address: 725 Massachusetts Ave, Arlington, MA 02476<br>                Census tract: 3567.03<br>                Population: 3211<br>                Median Income: 101735.0</div>`)[0];
+                popup_b7560565536303d17c03b148160ecba9.setContent(html_4a803e84c738defc7dd605784f6ded85);
+            
+        
+
+        marker_abfd579463fd78e8493716c49d02f8ed.bindPopup(popup_b7560565536303d17c03b148160ecba9)
+        ;
+
+        
+    
+    
+            var marker_0b1c7c38751c4a2fadc52636bfd6aa13 = L.marker(
+                [42.355251100000004, -71.20848477899892],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_00735443f8ddb92452e99b5217cbf320 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_0b1c7c38751c4a2fadc52636bfd6aa13.setIcon(icon_00735443f8ddb92452e99b5217cbf320);
+        
+    
+        var popup_0ffe3f0efe04db7ecbfa6fe3640f8886 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_3207e96c27cde8a30a3a39d17b19af63 = $(`<div id="html_3207e96c27cde8a30a3a39d17b19af63" style="width: 100.0%; height: 100.0%;">Address: 130 Walnut St, Newton, MA 02460<br>                Census tract: 3733.0<br>                Population: 3100<br>                Median Income: 113920.0</div>`)[0];
+                popup_0ffe3f0efe04db7ecbfa6fe3640f8886.setContent(html_3207e96c27cde8a30a3a39d17b19af63);
+            
+        
+
+        marker_0b1c7c38751c4a2fadc52636bfd6aa13.bindPopup(popup_0ffe3f0efe04db7ecbfa6fe3640f8886)
+        ;
+
+        
+    
+    
+            var marker_8e0ebe52e9269fe84a1d230ff700c81a = L.marker(
+                [42.368660399999996, -71.24911642980041],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_cc5789f5304be9eff996a37c4a4ac908 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8e0ebe52e9269fe84a1d230ff700c81a.setIcon(icon_cc5789f5304be9eff996a37c4a4ac908);
+        
+    
+        var popup_63bac528ebe518d8ad8b907572806704 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_e4b259ac0a2f0e93b9aab7be1cc75fd4 = $(`<div id="html_e4b259ac0a2f0e93b9aab7be1cc75fd4" style="width: 100.0%; height: 100.0%;">Address: 9 Hope Ave, Waltham, MA 02453<br>                Census tract: 3684.0<br>                Population: 8606<br>                Median Income: 83036.0</div>`)[0];
+                popup_63bac528ebe518d8ad8b907572806704.setContent(html_e4b259ac0a2f0e93b9aab7be1cc75fd4);
+            
+        
+
+        marker_8e0ebe52e9269fe84a1d230ff700c81a.bindPopup(popup_63bac528ebe518d8ad8b907572806704)
+        ;
+
+        
+    
+    
+            var marker_43ea07fbea374957afacf600b7d71c0d = L.marker(
+                [42.3651501, -71.1846612],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_e1dff369347938f1d501a2a7d372e1f8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_43ea07fbea374957afacf600b7d71c0d.setIcon(icon_e1dff369347938f1d501a2a7d372e1f8);
+        
+    
+        var popup_e90719b524d07bb80e23a8dab4752f75 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_912382bf800cbe4d65b11590e8f230db = $(`<div id="html_912382bf800cbe4d65b11590e8f230db" style="width: 100.0%; height: 100.0%;">Address: 51A Galen St, Watertown, MA 02472<br>                Census tract: 3704.03<br>                Population: 2070<br>                Median Income: 96786.0</div>`)[0];
+                popup_e90719b524d07bb80e23a8dab4752f75.setContent(html_912382bf800cbe4d65b11590e8f230db);
+            
+        
+
+        marker_43ea07fbea374957afacf600b7d71c0d.bindPopup(popup_e90719b524d07bb80e23a8dab4752f75)
+        ;
+
+        
+    
+    
+            var marker_c1dd3078786e72cc9f4c10e1619808e2 = L.marker(
+                [42.3839065, -71.26543264581181],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_620beb233a432ac9c4dd2130c31da7c8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c1dd3078786e72cc9f4c10e1619808e2.setIcon(icon_620beb233a432ac9c4dd2130c31da7c8);
+        
+    
+        var popup_dbfe532e47aaa6a15400528b3c630602 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_75fb5f8a33c46b42170430f8d49ceaac = $(`<div id="html_75fb5f8a33c46b42170430f8d49ceaac" style="width: 100.0%; height: 100.0%;">Address: 220 Bear Hill Rd, Waltham, MA 02451<br>                Census tract: 3682.0<br>                Population: 4198<br>                Median Income: 112778.0</div>`)[0];
+                popup_dbfe532e47aaa6a15400528b3c630602.setContent(html_75fb5f8a33c46b42170430f8d49ceaac);
+            
+        
+
+        marker_c1dd3078786e72cc9f4c10e1619808e2.bindPopup(popup_dbfe532e47aaa6a15400528b3c630602)
+        ;
+
+        
+    
+    
+            var marker_954205a88b21fe9e960b5845de70c020 = L.marker(
+                [42.357352000000006, -71.1865327177991],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_ed06f34d7d44f2c26e5dbcab57f46375 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_954205a88b21fe9e960b5845de70c020.setIcon(icon_ed06f34d7d44f2c26e5dbcab57f46375);
+        
+    
+        var popup_77e578689d2d4d90fa78ae8ea239f478 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_69e6a5c368b35d94dea973f7f646c3d6 = $(`<div id="html_69e6a5c368b35d94dea973f7f646c3d6" style="width: 100.0%; height: 100.0%;">Address: 313 Washington St, Newton, MA 02458<br>                Census tract: 3731.0<br>                Population: 5113<br>                Median Income: 102171.0</div>`)[0];
+                popup_77e578689d2d4d90fa78ae8ea239f478.setContent(html_69e6a5c368b35d94dea973f7f646c3d6);
+            
+        
+
+        marker_954205a88b21fe9e960b5845de70c020.bindPopup(popup_77e578689d2d4d90fa78ae8ea239f478)
+        ;
+
+        
+    
+    
+            var marker_bcc7d0e67f5fe1a8c5ea92b7af5fd155 = L.marker(
+                [42.36980330992108, -71.17182324137332],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_2c8d5431f3319bd6cfa2acc700688410 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_bcc7d0e67f5fe1a8c5ea92b7af5fd155.setIcon(icon_2c8d5431f3319bd6cfa2acc700688410);
+        
+    
+        var popup_da6462f9758b8dd1bb90b16722e86f38 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_281ec3417a026fc58781dd291343a4ca = $(`<div id="html_281ec3417a026fc58781dd291343a4ca" style="width: 100.0%; height: 100.0%;">Address: 293 Mt Auburn St, Watertown, MA 02472<br>                Census tract: 3704.01<br>                Population: 3531<br>                Median Income: 96786.0</div>`)[0];
+                popup_da6462f9758b8dd1bb90b16722e86f38.setContent(html_281ec3417a026fc58781dd291343a4ca);
+            
+        
+
+        marker_bcc7d0e67f5fe1a8c5ea92b7af5fd155.bindPopup(popup_da6462f9758b8dd1bb90b16722e86f38)
+        ;
+
+        
+    
+    
+            var marker_98d6ab7837386d8079fcc87d6f469276 = L.marker(
+                [42.368604500000004, -71.17679694189542],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_263f63da41a8164145b002febe160712 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_98d6ab7837386d8079fcc87d6f469276.setIcon(icon_263f63da41a8164145b002febe160712);
+        
+    
+        var popup_26f6f7e98df0ac7c775e2e7842c17452 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_f7a500212e34798376c0b225aadceec8 = $(`<div id="html_f7a500212e34798376c0b225aadceec8" style="width: 100.0%; height: 100.0%;">Address: 190 Mt Auburn St, Watertown, MA 02472<br>                Census tract: 3702.01<br>                Population: 3798<br>                Median Income: 96569.0</div>`)[0];
+                popup_26f6f7e98df0ac7c775e2e7842c17452.setContent(html_f7a500212e34798376c0b225aadceec8);
+            
+        
+
+        marker_98d6ab7837386d8079fcc87d6f469276.bindPopup(popup_26f6f7e98df0ac7c775e2e7842c17452)
+        ;
+
+        
+    
+    
+            var marker_1c4644f00def123392f55901a2c157ca = L.marker(
+                [42.325313, -71.259098],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_db3a93ab5a57e77b4f42e3c05f8f6e6c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1c4644f00def123392f55901a2c157ca.setIcon(icon_db3a93ab5a57e77b4f42e3c05f8f6e6c);
+        
+    
+        var popup_9e86e86334918f1f18681587a6ff950c = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_0cdd45295b7d8c02e582f9c9c33dd4ec = $(`<div id="html_0cdd45295b7d8c02e582f9c9c33dd4ec" style="width: 100.0%; height: 100.0%;">Address: 1 Washington St, Wellesley, MA 02481<br>                Census tract: 4042.01<br>                Population: 3944<br>                Median Income: 101735.0</div>`)[0];
+                popup_9e86e86334918f1f18681587a6ff950c.setContent(html_0cdd45295b7d8c02e582f9c9c33dd4ec);
+            
+        
+
+        marker_1c4644f00def123392f55901a2c157ca.bindPopup(popup_9e86e86334918f1f18681587a6ff950c)
+        ;
+
+        
+    
+    
+            var marker_aba31c6f3e25b546abe58c7096f54be0 = L.marker(
+                [42.368660399999996, -71.24911642980041],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_1364b8421febd49180960173b0fdc252 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_aba31c6f3e25b546abe58c7096f54be0.setIcon(icon_1364b8421febd49180960173b0fdc252);
+        
+    
+        var popup_988d524570976c2c3703ba04ccd537ad = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_422fabdf37c658878c84757d6ffd1d13 = $(`<div id="html_422fabdf37c658878c84757d6ffd1d13" style="width: 100.0%; height: 100.0%;">Address: 9 Hope Ave, Waltham, MA 02453<br>                Census tract: 3684.0<br>                Population: 8606<br>                Median Income: 83036.0</div>`)[0];
+                popup_988d524570976c2c3703ba04ccd537ad.setContent(html_422fabdf37c658878c84757d6ffd1d13);
+            
+        
+
+        marker_aba31c6f3e25b546abe58c7096f54be0.bindPopup(popup_988d524570976c2c3703ba04ccd537ad)
+        ;
+
+        
+    
+    
+            var marker_4e90b12c61b62698169fa01f167d3de2 = L.marker(
+                [42.386662, -71.18672127272727],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_f562a5e91cf26087576823c331100a99 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_4e90b12c61b62698169fa01f167d3de2.setIcon(icon_f562a5e91cf26087576823c331100a99);
+        
+    
+        var popup_66f9bd483b7380c798b6b2abc1ec394f = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_b3f7d3f4240d0ecc413e4952ea5410cb = $(`<div id="html_b3f7d3f4240d0ecc413e4952ea5410cb" style="width: 100.0%; height: 100.0%;">Address: 425 Trapelo Rd, Belmont, MA 02478<br>                Census tract: 3577.0<br>                Population: 4139<br>                Median Income: 76322.0</div>`)[0];
+                popup_66f9bd483b7380c798b6b2abc1ec394f.setContent(html_b3f7d3f4240d0ecc413e4952ea5410cb);
+            
+        
+
+        marker_4e90b12c61b62698169fa01f167d3de2.bindPopup(popup_66f9bd483b7380c798b6b2abc1ec394f)
+        ;
+
+        
+    
+    
+            var marker_e3673c17a81fc8374b4845a04aaa419e = L.marker(
+                [42.368660399999996, -71.24911642980041],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_48031ad4d712a3ee583835d46722a50c = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e3673c17a81fc8374b4845a04aaa419e.setIcon(icon_48031ad4d712a3ee583835d46722a50c);
+        
+    
+        var popup_676aa1aca5b7c43f13057b39ea952391 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_1cf2bfed287c4fbb5380cf6aea75aa4a = $(`<div id="html_1cf2bfed287c4fbb5380cf6aea75aa4a" style="width: 100.0%; height: 100.0%;">Address: 9 Hope Ave, Waltham, MA 02453<br>                Census tract: 3684.0<br>                Population: 8606<br>                Median Income: 83036.0</div>`)[0];
+                popup_676aa1aca5b7c43f13057b39ea952391.setContent(html_1cf2bfed287c4fbb5380cf6aea75aa4a);
+            
+        
+
+        marker_e3673c17a81fc8374b4845a04aaa419e.bindPopup(popup_676aa1aca5b7c43f13057b39ea952391)
+        ;
+
+        
+    
+    
+            var marker_8cd73ebf6e20c4b1d2965f3739571366 = L.marker(
+                [42.384953438216115, -71.18263418565441],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_11e35c2df50f94529c8bff63e06bca39 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_8cd73ebf6e20c4b1d2965f3739571366.setIcon(icon_11e35c2df50f94529c8bff63e06bca39);
+        
+    
+        var popup_609ce0dc7f84c65f92474f1a5177241c = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_860ce9f8eab0a582f41090bd63d02d76 = $(`<div id="html_860ce9f8eab0a582f41090bd63d02d76" style="width: 100.0%; height: 100.0%;">Address: 333 Trapelo Rd, Belmont, MA 02478<br>                Census tract: 3577.0<br>                Population: 4139<br>                Median Income: 76322.0</div>`)[0];
+                popup_609ce0dc7f84c65f92474f1a5177241c.setContent(html_860ce9f8eab0a582f41090bd63d02d76);
+            
+        
+
+        marker_8cd73ebf6e20c4b1d2965f3739571366.bindPopup(popup_609ce0dc7f84c65f92474f1a5177241c)
+        ;
+
+        
+    
+    
+            var marker_cd395da48e70d6d769d43fb2ba3be2be = L.marker(
+                [42.420731950000004, -71.17119039658218],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_70d69c8372fe23c3943c19513f10069b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_cd395da48e70d6d769d43fb2ba3be2be.setIcon(icon_70d69c8372fe23c3943c19513f10069b);
+        
+    
+        var popup_8d63b41b628ae8b5456865959d6dc9e2 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_d7fee7f241a51cde6433c09bd3708b39 = $(`<div id="html_d7fee7f241a51cde6433c09bd3708b39" style="width: 100.0%; height: 100.0%;">Address: 1068 Massachusetts Ave, Arlington, MA 02476<br>                Census tract: 3566.01<br>                Population: 4783<br>                Median Income: 108911.0</div>`)[0];
+                popup_8d63b41b628ae8b5456865959d6dc9e2.setContent(html_d7fee7f241a51cde6433c09bd3708b39);
+            
+        
+
+        marker_cd395da48e70d6d769d43fb2ba3be2be.bindPopup(popup_8d63b41b628ae8b5456865959d6dc9e2)
+        ;
+
+        
+    
+    
+            var marker_1433d4d91d566b1e92ef8a99e1883c81 = L.marker(
+                [42.36671208681668, -71.18219676917892],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_d7d6ae2e3808ee028bc196a69843b5e1 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_1433d4d91d566b1e92ef8a99e1883c81.setIcon(icon_d7d6ae2e3808ee028bc196a69843b5e1);
+        
+    
+        var popup_d0d1d5cd4adb08878a030b501d59cee9 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_0db9e769d30964c71c9dc742030d0d76 = $(`<div id="html_0db9e769d30964c71c9dc742030d0d76" style="width: 100.0%; height: 100.0%;">Address: 15 Summer St, Watertown, MA 02472<br>                Census tract: 3701.03<br>                Population: 3544<br>                Median Income: 75192.0</div>`)[0];
+                popup_d0d1d5cd4adb08878a030b501d59cee9.setContent(html_0db9e769d30964c71c9dc742030d0d76);
+            
+        
+
+        marker_1433d4d91d566b1e92ef8a99e1883c81.bindPopup(popup_d0d1d5cd4adb08878a030b501d59cee9)
+        ;
+
+        
+    
+    
+            var marker_565ada783aff07ec3cac484288cd0721 = L.marker(
+                [42.326491, -71.197893],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_1ba0f57087961d75f12b2a1e7d9c4eb8 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_565ada783aff07ec3cac484288cd0721.setIcon(icon_1ba0f57087961d75f12b2a1e7d9c4eb8);
+        
+    
+        var popup_bf749c35a4d3df637943f098f7a08da4 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_a5a3b1ebfb4909cc7017f5ad24893a65 = $(`<div id="html_a5a3b1ebfb4909cc7017f5ad24893a65" style="width: 100.0%; height: 100.0%;">Address: 1400 Centre St Student Center, Newton, MA 02459<br>                Census tract: 3738.0<br>                Population: 6066<br>                Median Income: 126875.0</div>`)[0];
+                popup_bf749c35a4d3df637943f098f7a08da4.setContent(html_a5a3b1ebfb4909cc7017f5ad24893a65);
+            
+        
+
+        marker_565ada783aff07ec3cac484288cd0721.bindPopup(popup_bf749c35a4d3df637943f098f7a08da4)
+        ;
+
+        
+    
+    
+            var marker_c1c5fc9d1e4e80625b0a22618996f2ba = L.marker(
+                [42.3677105, -71.17986324964266],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_9e1f0122a7b68293d555d2e6e13cfb59 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_c1c5fc9d1e4e80625b0a22618996f2ba.setIcon(icon_9e1f0122a7b68293d555d2e6e13cfb59);
+        
+    
+        var popup_b4bf6172caac170c579b4f21c5b6face = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_f9d411260584048e5a40d52e1e88a735 = $(`<div id="html_f9d411260584048e5a40d52e1e88a735" style="width: 100.0%; height: 100.0%;">Address: 106 Mt Auburn St, Watertown, MA 02472<br>                Census tract: 3702.02<br>                Population: 4222<br>                Median Income: 112167.0</div>`)[0];
+                popup_b4bf6172caac170c579b4f21c5b6face.setContent(html_f9d411260584048e5a40d52e1e88a735);
+            
+        
+
+        marker_c1c5fc9d1e4e80625b0a22618996f2ba.bindPopup(popup_b4bf6172caac170c579b4f21c5b6face)
+        ;
+
+        
+    
+    
+            var marker_28af73a01d967b7e09ff77bdbdac1551 = L.marker(
+                [42.3248392, -71.2609765],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_249861031e9057b364ded73fb1f1dc6e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_28af73a01d967b7e09ff77bdbdac1551.setIcon(icon_249861031e9057b364ded73fb1f1dc6e);
+        
+    
+        var popup_dd131ccf32c4304eca1123d0e59c90ba = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_4ac61ce181fc1e1be5d369cdfa1aa722 = $(`<div id="html_4ac61ce181fc1e1be5d369cdfa1aa722" style="width: 100.0%; height: 100.0%;">Address: 1 Washington St, Wellesley Hills, MA 02481<br>                Census tract: 4042.01<br>                Population: 3944<br>                Median Income: 101735.0</div>`)[0];
+                popup_dd131ccf32c4304eca1123d0e59c90ba.setContent(html_4ac61ce181fc1e1be5d369cdfa1aa722);
+            
+        
+
+        marker_28af73a01d967b7e09ff77bdbdac1551.bindPopup(popup_dd131ccf32c4304eca1123d0e59c90ba)
+        ;
+
+        
+    
+    
+            var marker_ce6c10942768974458b1fc95008fcf3c = L.marker(
+                [42.370535, -71.162289],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_8cfe027426cdbab1b29b0ffcae5952c3 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_ce6c10942768974458b1fc95008fcf3c.setIcon(icon_8cfe027426cdbab1b29b0ffcae5952c3);
+        
+    
+        var popup_19e703fff5a8248c20193cfadb5e0b9d = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_fa9712d94fada9e475e6d12e3a552192 = $(`<div id="html_fa9712d94fada9e475e6d12e3a552192" style="width: 100.0%; height: 100.0%;">Address: 521 Mt Auburn St, Watertown, MA 02472<br>                Census tract: 3703.01<br>                Population: 4531<br>                Median Income: 69333.0</div>`)[0];
+                popup_19e703fff5a8248c20193cfadb5e0b9d.setContent(html_fa9712d94fada9e475e6d12e3a552192);
+            
+        
+
+        marker_ce6c10942768974458b1fc95008fcf3c.bindPopup(popup_19e703fff5a8248c20193cfadb5e0b9d)
+        ;
+
+        
+    
+    
+            var marker_5b0f6c717bd461e0256a2d0e12ba2324 = L.marker(
+                [42.368660399999996, -71.24911642980041],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_ef00d367ebf22a4479d119c86c0fcb0b = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_5b0f6c717bd461e0256a2d0e12ba2324.setIcon(icon_ef00d367ebf22a4479d119c86c0fcb0b);
+        
+    
+        var popup_14ed219bbb9a91060f79dd0bc0782a46 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_220b0da3e75223a02c41ab07e001e146 = $(`<div id="html_220b0da3e75223a02c41ab07e001e146" style="width: 100.0%; height: 100.0%;">Address: 9 Hope Ave, Waltham, MA 02453<br>                Census tract: 3684.0<br>                Population: 8606<br>                Median Income: 83036.0</div>`)[0];
+                popup_14ed219bbb9a91060f79dd0bc0782a46.setContent(html_220b0da3e75223a02c41ab07e001e146);
+            
+        
+
+        marker_5b0f6c717bd461e0256a2d0e12ba2324.bindPopup(popup_14ed219bbb9a91060f79dd0bc0782a46)
+        ;
+
+        
+    
+    
+            var marker_dd897d3400e795398d59e6521aff3697 = L.marker(
+                [42.33016775, -71.19469075],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_73c3240f609ee1e4a009f9b2ee726f07 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_dd897d3400e795398d59e6521aff3697.setIcon(icon_73c3240f609ee1e4a009f9b2ee726f07);
+        
+    
+        var popup_18262cf3f058bdf1a80884cd3c8ffb57 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_1649a28ea47610e4829d28e9a731749f = $(`<div id="html_1649a28ea47610e4829d28e9a731749f" style="width: 100.0%; height: 100.0%;">Address: 792 Beacon St, Newton Centre, MA 02459<br>                Census tract: 3738.0<br>                Population: 6066<br>                Median Income: 126875.0</div>`)[0];
+                popup_18262cf3f058bdf1a80884cd3c8ffb57.setContent(html_1649a28ea47610e4829d28e9a731749f);
+            
+        
+
+        marker_dd897d3400e795398d59e6521aff3697.bindPopup(popup_18262cf3f058bdf1a80884cd3c8ffb57)
+        ;
+
+        
+    
+    
+            var marker_6107850a07ecb053f92f729a60c6165c = L.marker(
+                [42.38674422605168, -71.20477019967096],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_5d9849f1561a930fa3ac21c4705593af = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6107850a07ecb053f92f729a60c6165c.setIcon(icon_5d9849f1561a930fa3ac21c4705593af);
+        
+    
+        var popup_e5f8398b7bbd747414ecad3c41d61a17 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_850a935d4a1a2a96393d3dce087d743c = $(`<div id="html_850a935d4a1a2a96393d3dce087d743c" style="width: 100.0%; height: 100.0%;">Address: 355 Waverley Oaks Rd, Waltham, MA 02452<br>                Census tract: 3691.0<br>                Population: 5059<br>                Median Income: 87109.0</div>`)[0];
+                popup_e5f8398b7bbd747414ecad3c41d61a17.setContent(html_850a935d4a1a2a96393d3dce087d743c);
+            
+        
+
+        marker_6107850a07ecb053f92f729a60c6165c.bindPopup(popup_e5f8398b7bbd747414ecad3c41d61a17)
+        ;
+
+        
+    
+    
+            var marker_b7b34c95e0b8fff99975912aa982eebb = L.marker(
+                [42.423167449999994, -71.18323084303145],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_f7af3f40318fa9e8f99b01ec351bb53e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_b7b34c95e0b8fff99975912aa982eebb.setIcon(icon_f7af3f40318fa9e8f99b01ec351bb53e);
+        
+    
+        var popup_121f0168efced4ce01e87cec07a54aec = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_7cfa028296ae1d69d4840d61e87073de = $(`<div id="html_7cfa028296ae1d69d4840d61e87073de" style="width: 100.0%; height: 100.0%;">Address: 100 Park Ave, Arlington, MA 02476<br>                Census tract: 3566.02<br>                Population: 4284<br>                Median Income: 97569.0</div>`)[0];
+                popup_121f0168efced4ce01e87cec07a54aec.setContent(html_7cfa028296ae1d69d4840d61e87073de);
+            
+        
+
+        marker_b7b34c95e0b8fff99975912aa982eebb.bindPopup(popup_121f0168efced4ce01e87cec07a54aec)
+        ;
+
+        
+    
+    
+            var marker_e521414a032ee3a6210b5c777d7fdfdc = L.marker(
+                [42.368660399999996, -71.24911642980041],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_7b5c6196866720ea6a77dfd36bf12cd9 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e521414a032ee3a6210b5c777d7fdfdc.setIcon(icon_7b5c6196866720ea6a77dfd36bf12cd9);
+        
+    
+        var popup_67d0210cd35434d400e2b70cef2cd641 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_1d44ce29cfc832cddee7414560e0a475 = $(`<div id="html_1d44ce29cfc832cddee7414560e0a475" style="width: 100.0%; height: 100.0%;">Address: 9 Hope Ave, Waltham, MA 02453<br>                Census tract: 3684.0<br>                Population: 8606<br>                Median Income: 83036.0</div>`)[0];
+                popup_67d0210cd35434d400e2b70cef2cd641.setContent(html_1d44ce29cfc832cddee7414560e0a475);
+            
+        
+
+        marker_e521414a032ee3a6210b5c777d7fdfdc.bindPopup(popup_67d0210cd35434d400e2b70cef2cd641)
+        ;
+
+        
+    
+    
+            var marker_63fa0f6c3a92967168718946d82c41d2 = L.marker(
+                [42.37624594117647, -71.25308905882353],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_aaae6b5e07d5f4e33328177bae001188 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_63fa0f6c3a92967168718946d82c41d2.setIcon(icon_aaae6b5e07d5f4e33328177bae001188);
+        
+    
+        var popup_1c4f28f5414d1cb2f60a2b24812222b8 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_2d1f2f2a4200111d3700b3243a537367 = $(`<div id="html_2d1f2f2a4200111d3700b3243a537367" style="width: 100.0%; height: 100.0%;">Address: 1030 Main St, Waltham, MA 02451<br>                Census tract: 3683.0<br>                Population: 5763<br>                Median Income: 78088.0</div>`)[0];
+                popup_1c4f28f5414d1cb2f60a2b24812222b8.setContent(html_2d1f2f2a4200111d3700b3243a537367);
+            
+        
+
+        marker_63fa0f6c3a92967168718946d82c41d2.bindPopup(popup_1c4f28f5414d1cb2f60a2b24812222b8)
+        ;
+
+        
+    
+    
+            var marker_8ba137dbe2f24e07634a6c00091c284b = L.marker(
+                [42.39718915, -71.17620378078894],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_ed13b125a8e19a91b9a1fda3870b2bcf = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_8ba137dbe2f24e07634a6c00091c284b.setIcon(icon_ed13b125a8e19a91b9a1fda3870b2bcf);
+        
+    
+        var popup_9dee1f4e44b7e256dc24ad3c97156d08 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_c934484e5a0ecd6b9041342298338821 = $(`<div id="html_c934484e5a0ecd6b9041342298338821" style="width: 100.0%; height: 100.0%;">Address: 18 Moore St, Belmont, MA 02478<br>                Census tract: 3578.0<br>                Population: 4024<br>                Median Income: 133958.0</div>`)[0];
+                popup_9dee1f4e44b7e256dc24ad3c97156d08.setContent(html_c934484e5a0ecd6b9041342298338821);
+            
+        
+
+        marker_8ba137dbe2f24e07634a6c00091c284b.bindPopup(popup_9dee1f4e44b7e256dc24ad3c97156d08)
+        ;
+
+        
+    
+    
+            var marker_e276e4a7b088ae9361e1bcd4425be1bd = L.marker(
+                [42.37624594117647, -71.25308905882353],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_b6b291c3d79fa7b0302e2313445ed517 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_e276e4a7b088ae9361e1bcd4425be1bd.setIcon(icon_b6b291c3d79fa7b0302e2313445ed517);
+        
+    
+        var popup_51cf85b40b1ba75d3eb2549f69b592cb = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_076c5ccb8249e106a114d6d46f4a2207 = $(`<div id="html_076c5ccb8249e106a114d6d46f4a2207" style="width: 100.0%; height: 100.0%;">Address: 1030 Main St, Waltham, MA 02451<br>                Census tract: 3683.0<br>                Population: 5763<br>                Median Income: 78088.0</div>`)[0];
+                popup_51cf85b40b1ba75d3eb2549f69b592cb.setContent(html_076c5ccb8249e106a114d6d46f4a2207);
+            
+        
+
+        marker_e276e4a7b088ae9361e1bcd4425be1bd.bindPopup(popup_51cf85b40b1ba75d3eb2549f69b592cb)
+        ;
+
+        
+    
+    
+            var marker_ecd0cc83a4da79f43b9c9ae057f8c808 = L.marker(
+                [42.37568533333334, -71.24194583333333],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_46da604ddd1998bffaac45f6416eb021 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_ecd0cc83a4da79f43b9c9ae057f8c808.setIcon(icon_46da604ddd1998bffaac45f6416eb021);
+        
+    
+        var popup_01b99759f9fd8aa9857be81b81dc71da = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_f956e84bc8982fc8e9608d383f37476e = $(`<div id="html_f956e84bc8982fc8e9608d383f37476e" style="width: 100.0%; height: 100.0%;">Address: 30 Grant St, Waltham, MA 02453<br>                Census tract: 3683.0<br>                Population: 5763<br>                Median Income: 78088.0</div>`)[0];
+                popup_01b99759f9fd8aa9857be81b81dc71da.setContent(html_f956e84bc8982fc8e9608d383f37476e);
+            
+        
+
+        marker_ecd0cc83a4da79f43b9c9ae057f8c808.bindPopup(popup_01b99759f9fd8aa9857be81b81dc71da)
+        ;
+
+        
+    
+    
+            var marker_dc6f45a0040e0dac2b6a6c234c40c5e8 = L.marker(
+                [42.380235, -71.22407782147096],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_412e478e72e264f9091e8c4a6660d756 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_dc6f45a0040e0dac2b6a6c234c40c5e8.setIcon(icon_412e478e72e264f9091e8c4a6660d756);
+        
+    
+        var popup_b6349175e0c2bfa8b369d1070c72dd91 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_28a11c0fc56ba15aae1a83e57540012a = $(`<div id="html_28a11c0fc56ba15aae1a83e57540012a" style="width: 100.0%; height: 100.0%;">Address: 45 Middlesex Rd, Waltham, MA 02452<br>                Census tract: 3689.02<br>                Population: 3691<br>                Median Income: 59375.0</div>`)[0];
+                popup_b6349175e0c2bfa8b369d1070c72dd91.setContent(html_28a11c0fc56ba15aae1a83e57540012a);
+            
+        
+
+        marker_dc6f45a0040e0dac2b6a6c234c40c5e8.bindPopup(popup_b6349175e0c2bfa8b369d1070c72dd91)
+        ;
+
+        
+    
+    
+            var marker_484bc4836ce2a283fca9882ec803db7f = L.marker(
+                [42.37428289240642, -71.23204778524288],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_ae0fea83141c36d892ce7788c4fa621f = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_484bc4836ce2a283fca9882ec803db7f.setIcon(icon_ae0fea83141c36d892ce7788c4fa621f);
+        
+    
+        var popup_def8f12b64e8632c459968c0049d6a1a = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_b9b8adc01a712ae4cb73754e738e8cff = $(`<div id="html_b9b8adc01a712ae4cb73754e738e8cff" style="width: 100.0%; height: 100.0%;">Address: 431 River St, Waltham, MA 02453<br>                Census tract: 3688.0<br>                Population: 6169<br>                Median Income: 76929.0</div>`)[0];
+                popup_def8f12b64e8632c459968c0049d6a1a.setContent(html_b9b8adc01a712ae4cb73754e738e8cff);
+            
+        
+
+        marker_484bc4836ce2a283fca9882ec803db7f.bindPopup(popup_def8f12b64e8632c459968c0049d6a1a)
+        ;
+
+        
+    
+    
+            var marker_796fb266b5d78ca30ba49bf46d78dcef = L.marker(
+                [42.368660399999996, -71.24911642980041],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_703eab4a5334cacc6743494bdcc9c0b7 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_796fb266b5d78ca30ba49bf46d78dcef.setIcon(icon_703eab4a5334cacc6743494bdcc9c0b7);
+        
+    
+        var popup_5a70a5885abb019adac930b1650275b4 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_2ed985ae4e6d2f372c171e898d6110cf = $(`<div id="html_2ed985ae4e6d2f372c171e898d6110cf" style="width: 100.0%; height: 100.0%;">Address: 9 Hope Ave, Waltham, MA 02453<br>                Census tract: 3684.0<br>                Population: 8606<br>                Median Income: 83036.0</div>`)[0];
+                popup_5a70a5885abb019adac930b1650275b4.setContent(html_2ed985ae4e6d2f372c171e898d6110cf);
+            
+        
+
+        marker_796fb266b5d78ca30ba49bf46d78dcef.bindPopup(popup_5a70a5885abb019adac930b1650275b4)
+        ;
+
+        
+    
+    
+            var marker_11f56e8d3ebe6ba4c473d4d920b6b03d = L.marker(
+                [42.37624594117647, -71.25308905882353],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_99db90e2094e519dbb5b9b6638b859cb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_11f56e8d3ebe6ba4c473d4d920b6b03d.setIcon(icon_99db90e2094e519dbb5b9b6638b859cb);
+        
+    
+        var popup_3e3bf563f2697d13764615bef666d4b5 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_339d4f703e46f16d9622927bf6cbba8e = $(`<div id="html_339d4f703e46f16d9622927bf6cbba8e" style="width: 100.0%; height: 100.0%;">Address: 1030 Main St, Waltham, MA 02451<br>                Census tract: 3683.0<br>                Population: 5763<br>                Median Income: 78088.0</div>`)[0];
+                popup_3e3bf563f2697d13764615bef666d4b5.setContent(html_339d4f703e46f16d9622927bf6cbba8e);
+            
+        
+
+        marker_11f56e8d3ebe6ba4c473d4d920b6b03d.bindPopup(popup_3e3bf563f2697d13764615bef666d4b5)
+        ;
+
+        
+    
+    
+            var marker_3c10a9b0929ae0719a46c6f815002359 = L.marker(
+                [42.41163889172898, -71.23367563530519],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_1d4768a2e350b42500dccb609101bbf5 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_3c10a9b0929ae0719a46c6f815002359.setIcon(icon_1d4768a2e350b42500dccb609101bbf5);
+        
+    
+        var popup_09d132a9b31222f633aabcef65c88f90 = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_427037bb116f32f79f075abe53259843 = $(`<div id="html_427037bb116f32f79f075abe53259843" style="width: 100.0%; height: 100.0%;">Address: 1070 Lexington St, Waltham, MA 02452<br>                Census tract: 3681.01<br>                Population: 5782<br>                Median Income: 100625.0</div>`)[0];
+                popup_09d132a9b31222f633aabcef65c88f90.setContent(html_427037bb116f32f79f075abe53259843);
+            
+        
+
+        marker_3c10a9b0929ae0719a46c6f815002359.bindPopup(popup_09d132a9b31222f633aabcef65c88f90)
+        ;
+
+        
+    
+    
+            var marker_474cb6f78f2a8f885cfbac343c0ac9ec = L.marker(
+                [42.3689715, -71.21516201974028],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_f52fb2e41e8e62610b2a8cd91c3f23bb = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "blue", "prefix": "glyphicon"}
+            );
+            marker_474cb6f78f2a8f885cfbac343c0ac9ec.setIcon(icon_f52fb2e41e8e62610b2a8cd91c3f23bb);
+        
+    
+        var popup_c296ac0bef247b0debfa556a1814461b = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_f48d50f861b24b8c66b38f3b7bb34e52 = $(`<div id="html_f48d50f861b24b8c66b38f3b7bb34e52" style="width: 100.0%; height: 100.0%;">Address: 66 Seyon St, Waltham, MA 02453<br>                Census tract: 3688.0<br>                Population: 6169<br>                Median Income: 76929.0</div>`)[0];
+                popup_c296ac0bef247b0debfa556a1814461b.setContent(html_f48d50f861b24b8c66b38f3b7bb34e52);
+            
+        
+
+        marker_474cb6f78f2a8f885cfbac343c0ac9ec.bindPopup(popup_c296ac0bef247b0debfa556a1814461b)
+        ;
+
+        
+    
+    
+            var marker_6d3e292adfd32ffd66368bfa5c2b28dd = L.marker(
+                [42.37088966666667, -71.237095],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_5df17954b6f4271e352040257a53e811 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6d3e292adfd32ffd66368bfa5c2b28dd.setIcon(icon_5df17954b6f4271e352040257a53e811);
+        
+    
+        var popup_32eb139565258a504dcf69e04f7cf16d = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_867965e1a770cae8a61d84107ddaaef5 = $(`<div id="html_867965e1a770cae8a61d84107ddaaef5" style="width: 100.0%; height: 100.0%;">Address: 309 Moody St, Waltham, MA 02453<br>                Census tract: 3685.0<br>                Population: 3419<br>                Median Income: 52976.0</div>`)[0];
+                popup_32eb139565258a504dcf69e04f7cf16d.setContent(html_867965e1a770cae8a61d84107ddaaef5);
+            
+        
+
+        marker_6d3e292adfd32ffd66368bfa5c2b28dd.bindPopup(popup_32eb139565258a504dcf69e04f7cf16d)
+        ;
+
+        
+    
+    
+            var marker_6fa538bbcff84ce1e613ad3d2c241136 = L.marker(
+                [42.37624594117647, -71.25308905882353],
+                {}
+            ).addTo(map_8fae38a8c1f8f254f6dbc756476f2845);
+        
+    
+            var icon_850b04f06a140117653812417a3c3a32 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "info-sign", "iconColor": "white", "markerColor": "red", "prefix": "glyphicon"}
+            );
+            marker_6fa538bbcff84ce1e613ad3d2c241136.setIcon(icon_850b04f06a140117653812417a3c3a32);
+        
+    
+        var popup_198781bb7ce6432954518aef76443e2e = L.popup({"maxWidth": 2650});
+
+        
+            
+                var html_a4c2c51c361a4f921dad4b21969a8868 = $(`<div id="html_a4c2c51c361a4f921dad4b21969a8868" style="width: 100.0%; height: 100.0%;">Address: 1030 Main St, Waltham, MA 02451<br>                Census tract: 3683.0<br>                Population: 5763<br>                Median Income: 78088.0</div>`)[0];
+                popup_198781bb7ce6432954518aef76443e2e.setContent(html_a4c2c51c361a4f921dad4b21969a8868);
+            
+        
+
+        marker_6fa538bbcff84ce1e613ad3d2c241136.bindPopup(popup_198781bb7ce6432954518aef76443e2e)
+        ;
+
+        
+    
+</script>
+</html>
